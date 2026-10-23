@@ -6,6 +6,10 @@
 
 - [Phase 1 planning & design gate — ACTIVE](phase1/PHASE1_MASTER_PLAN.md)
 - [Phase 1 exit audit — NOT COMPLETE](phase1/EXIT_AUDIT.md)
+- [Filius engine reuse audit — partial](phase1/research/FILIUS_REUSE_AUDIT.md)
+- [Device and interface topology contract](phase1/DEVICE_AND_INTERFACE_MODEL.md)
+- [Virtual time and event trace contract](phase1/EVENT_ENGINE_CONTRACT.md)
+- [Standards-indexed test vectors](phase1/STANDARDS_TEST_VECTORS.md)
 - [Project vision](IDEA_PLAN.md)
 - [Implementation roadmap](TECHNICAL_PLAN.md)
 - [Architecture review and outstanding decision gates](architecture/ARCHITECTURE_REVIEW.md)

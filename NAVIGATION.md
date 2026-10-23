@@ -8,6 +8,9 @@ Authoritative cold-start map. Open this file after [AGENTS.md](AGENTS.md). Docum
 | **Phase 1: planning and design** | [PHASE1_MASTER_PLAN.md](phase1/PHASE1_MASTER_PLAN.md) | [SYSTEM_CONTRACTS.md](phase1/SYSTEM_CONTRACTS.md), [EXIT_AUDIT.md](phase1/EXIT_AUDIT.md) |
 | **Phase 1: protocol and Android detail** | [PROTOCOL_BEHAVIOR_SPEC.md](phase1/PROTOCOL_BEHAVIOR_SPEC.md) | [ANDROID_EXPERIENCE_SPEC.md](phase1/ANDROID_EXPERIENCE_SPEC.md), [FAILURE_AND_SECURITY_ATLAS.md](phase1/FAILURE_AND_SECURITY_ATLAS.md) |
 | **Phase 1: decisions and work packets** | [DECISION_GATES.md](phase1/DECISION_GATES.md) | [WORK_BREAKDOWN.md](phase1/WORK_BREAKDOWN.md) |
+| **Phase 1: build versus adapt** | [FILIUS_REUSE_AUDIT.md](phase1/research/FILIUS_REUSE_AUDIT.md) | [REVIEW_OPEN_ITEMS.md](phase1/REVIEW_OPEN_ITEMS.md) |
+| **Phase 1: physical and logical topology** | [DEVICE_AND_INTERFACE_MODEL.md](phase1/DEVICE_AND_INTERFACE_MODEL.md) | [SYSTEM_CONTRACTS.md](phase1/SYSTEM_CONTRACTS.md) |
+| **Phase 1: engine time / traces** | [EVENT_ENGINE_CONTRACT.md](phase1/EVENT_ENGINE_CONTRACT.md) | [STANDARDS_TEST_VECTORS.md](phase1/STANDARDS_TEST_VECTORS.md) |
 | Detailed architecture review | [ARCHITECTURE_REVIEW.md](architecture/ARCHITECTURE_REVIEW.md) | [ARCHITECTURE_BLUEPRINT.md](architecture/ARCHITECTURE_BLUEPRINT.md), [decisions](architecture/DECISION_LOG.md) |
 | Architecture alternatives / sources | [SOURCE_EVALUATION.md](architecture/SOURCE_EVALUATION.md) | [EVIDENCE.md](knowledge-system/vault/EVIDENCE.md) |
 | Risks / validation / implementation gates | [RISK_REGISTER.md](architecture/RISK_REGISTER.md) | [SPIKES_AND_DECISION_GATES.md](architecture/SPIKES_AND_DECISION_GATES.md), [IMPLEMENTATION_ROADMAP.md](architecture/IMPLEMENTATION_ROADMAP.md), [VALIDATION_STRATEGY.md](architecture/VALIDATION_STRATEGY.md) |

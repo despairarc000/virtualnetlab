@@ -33,6 +33,19 @@ class KnowledgeTests(unittest.TestCase):
         self.assertIn("phase1/EXIT_AUDIT.md", paths)
         self.assertEqual(len(paths), len(set(paths)))
 
+    def test_phase1_deep_routes(self):
+        tests = [
+            ("Filius gpl reuse", "phase1/research/FILIUS_REUSE_AUDIT.md"),
+            ("WAN LAN bridge port", "phase1/DEVICE_AND_INTERFACE_MODEL.md"),
+            ("event scheduler replay", "phase1/EVENT_ENGINE_CONTRACT.md"),
+            ("DHCP IPv4LL RFC", "phase1/STANDARDS_TEST_VECTORS.md"),
+        ]
+        for query, expected in tests:
+            with self.subTest(query=query):
+                _, paths = mod.route(query)
+                self.assertIn(expected, paths)
+                self.assertEqual(len(paths), len(set(paths)))
+
     def test_protocol_route(self):
         _, paths = mod.route("fix dhcp wan switch")
         self.assertTrue(any("LAB_ACCEPTANCE" in p for p in paths))

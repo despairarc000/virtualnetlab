@@ -41,3 +41,10 @@ Entry standards: heading, date, status, claim/fact vs inference, evidence links,
 - [Work packets](../../phase1/WORK_BREAKDOWN.md)
 - [Vocabulary and decision rules](../../phase1/GLOSSARY_AND_DECISION_RULES.md)
 - [Exit audit: not approved](../../phase1/EXIT_AUDIT.md)
+
+## P0 architecture detail / Phase 1 continuing
+- [Source-level Filius candidate audit](../../phase1/research/FILIUS_REUSE_AUDIT.md) — partial, no approved reuse
+- [Physical/logical ports, bridge and WAN/LAN](../../phase1/DEVICE_AND_INTERFACE_MODEL.md)
+- [Virtual time, events, trace identity and replay](../../phase1/EVENT_ENGINE_CONTRACT.md)
+- [Network standards test vectors](../../phase1/STANDARDS_TEST_VECTORS.md)
+- [Priority unresolved evidence](../../phase1/REVIEW_OPEN_ITEMS.md)

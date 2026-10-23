@@ -18,3 +18,8 @@
 - Added Phase 1 master plan, typed domain and scheduling contracts, protocol semantics, Android/UX/storage/lifecycle design, failure/security atlas, research/reuse decision gates, detailed handoff packets, glossary and live exit audit.
 - Connected these through ICM, vault and navigation and extended test checks for route coverage.
 - Not yet performed: independent peer review, actual source-level Filius audit, 4GB Android benchmark, packet buffer/scheduler spikes, protocol source-level conformance execution or Gate A sign-off. The exit audit explicitly remains NOT READY.
+
+## 2026-10-23 — continuing Phase 1 P0 engineering contracts
+- Rechecked latest known upstream Filius v2.14.0 tag 2026-08-29, GPL dual-option statement and legacy source showing layer worker start; **no current tagged source-level audit possible through runtime**. Decision remains blocked; no GPL source copied.
+- Drafted device/port/bridge-domain/L3/service composition and WAN DHCP edge-case fixtures; defined scheduler event identity, serial mutation, stale event suppression, trace provenance and overload failure behaviors.
+- Added standards-indexed DHCP/IPv4LL/ARP/ICMP/IPv4/RFC negative cases and urgent evidence debt. Next: S10 tagged-code review and S03/S01/S02/S04 measured spikes; no production code authorization.

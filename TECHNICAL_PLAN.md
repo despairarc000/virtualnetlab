@@ -59,3 +59,11 @@ Read [AGENTS.md](AGENTS.md). No announced protocol support without standards-bac
 - [Implementation work breakdown](phase1/WORK_BREAKDOWN.md)
 - [Glossary and scope vocabulary](phase1/GLOSSARY_AND_DECISION_RULES.md)
 - [Planning sign-off checklist](phase1/EXIT_AUDIT.md)
+
+## Phase 1 P0 deep-dive (2026-10-23)
+- [Source-level build-versus-adapt Filius audit](phase1/research/FILIUS_REUSE_AUDIT.md) — PARTIAL; current tagged source audit remains blocking
+- [Physical ports, bridge instances, logical L3 and DHCP bindings](phase1/DEVICE_AND_INTERFACE_MODEL.md)
+- [Deterministic scheduling, actor commands and causal event trace](phase1/EVENT_ENGINE_CONTRACT.md)
+- [RFC-indexed positive/negative fixtures](phase1/STANDARDS_TEST_VECTORS.md)
+- [Open evidence register](phase1/REVIEW_OPEN_ITEMS.md)
+These are proposed design contracts, not validated runtimes. Gate A remains blocked.

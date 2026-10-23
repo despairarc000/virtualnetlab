@@ -42,3 +42,10 @@ Architecture: can two implementers derive the same packet/event/destination resu
 
 ## Reopen policy
 If a passed design assumption is falsified during implementation, stop dependent work, reproduce defect, reopen the owning decision, run smallest experiment, update architecture + tests + impact graph, and only then continue. Planning reduces risk; it does not guarantee no changes forever.
+
+## Detailed evidence update — 2026-10-23
+- X02: [Filius audit](research/FILIUS_REUSE_AUDIT.md) is **PARTIAL**; older source samples and latest upstream tag known, but current tagged architecture/license full source not inspected; S10 remains incomplete.
+- X03: [Port/interface contract](DEVICE_AND_INTERFACE_MODEL.md) is **DRAFT** with explicit LAN bridge vs WAN interface, 10 cases; S03 executable fixture not run.
+- X04/X07: [Event/trace contract](EVENT_ENGINE_CONTRACT.md) is **DRAFT**; determinism benchmark/replay traces missing.
+- X06/X12: [standards test vectors](STANDARDS_TEST_VECTORS.md) drafted, not executed. See [open items](REVIEW_OPEN_ITEMS.md).
+- Documentation CI being green does not alter X01–X14 or authorize Phase 2.

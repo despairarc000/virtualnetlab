@@ -56,3 +56,11 @@ This phase drastically reduces rework, but cannot promise **zero** implementatio
 
 ## Next action
 Complete and review [system contracts](SYSTEM_CONTRACTS.md), [protocol behavior](PROTOCOL_BEHAVIOR_SPEC.md) and [device Android contract](ANDROID_EXPERIENCE_SPEC.md); execute [decision spikes](DECISION_GATES.md) before authorizing production network engine.
+
+## Current detailed design package — P102/P103/P104/P106 (Oct 23)
+- [Filius reuse and license/source audit](research/FILIUS_REUSE_AUDIT.md) — partial review, S10 blocked pending tagged source
+- [Device & logical-interface topology](DEVICE_AND_INTERFACE_MODEL.md) — candidate schema and 10 falsifiable lab cases
+- [Event engine, replay and trace](EVENT_ENGINE_CONTRACT.md) — deterministic commands, budget/fault policy, next experimental assertions
+- [Protocol/RFC behavior vectors](STANDARDS_TEST_VECTORS.md) — DHCP, IPv4LL, ARP, ICMP, host routing, event isolation and Android lifecycle
+- [P0/P1 open items and evidence debt](REVIEW_OPEN_ITEMS.md)
+These additions increase design specificity but do not change [exit audit](EXIT_AUDIT.md) from NOT READY.

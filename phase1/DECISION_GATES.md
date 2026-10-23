@@ -43,3 +43,6 @@ Use a documented Decision Card with **Problem / Constraints / Candidates / Sourc
 
 ## Evidence not yet obtained
 No S01–S10 experiments, no source-level current Filius architecture audit, no Kotlin engine, Android performance sample, APK, or protocol engine have been executed in this phase. Documentation/CI only is not design sign-off.
+
+## Additional candidate contracts (not accepted yet)
+S03: [DEVICE_AND_INTERFACE_MODEL](DEVICE_AND_INTERFACE_MODEL.md) defines port/bridge/L3/service identity and explicit WAN/LAN bindings. S01: [EVENT_ENGINE_CONTRACT](EVENT_ENGINE_CONTRACT.md) specifies serial virtual-time execution, replay identity, and storm/cancel failure handling. S10: [FILIUS_REUSE_AUDIT](research/FILIUS_REUSE_AUDIT.md) shows current v2.14 tag and prior Java thread/desktop design evidence but leaves current implementation inspection OPEN. Fixtures: [STANDARDS_TEST_VECTORS](STANDARDS_TEST_VECTORS.md). Active blockers: [REVIEW_OPEN_ITEMS](REVIEW_OPEN_ITEMS.md).

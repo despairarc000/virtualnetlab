@@ -22,3 +22,10 @@ This route must appear in tools/knowledge.py and its tests.
 ## Phase 1 required context (user sequencing rule)
 - **phase1 / planning / spec / specification / readiness / signoff / freeze / before coding / risk-reduction** -> [master](../../phase1/PHASE1_MASTER_PLAN.md), [system](../../phase1/SYSTEM_CONTRACTS.md), [protocol](../../phase1/PROTOCOL_BEHAVIOR_SPEC.md), [Android](../../phase1/ANDROID_EXPERIENCE_SPEC.md), [decisions](../../phase1/DECISION_GATES.md), [exit audit](../../phase1/EXIT_AUDIT.md).
 - Before any implementation recommendation, verify Phase 1 [EXIT_AUDIT](../../phase1/EXIT_AUDIT.md). Code Mode agents must not treat DRAFT plans as accepted API specifications.
+
+## Required task-depth routing updates (2026-10-23)
+- **filius / reuse / gpl / fork / licensing** -> [Filius audit](../../phase1/research/FILIUS_REUSE_AUDIT.md), [open items](../../phase1/REVIEW_OPEN_ITEMS.md).
+- **port / interface / lan / wan / bridge / topology / vlan** -> [device model](../../phase1/DEVICE_AND_INTERFACE_MODEL.md), [system contracts](../../phase1/SYSTEM_CONTRACTS.md).
+- **event / replay / scheduler / trace / virtual-time** -> [event engine contract](../../phase1/EVENT_ENGINE_CONTRACT.md), [spikes](../../architecture/SPIKES_AND_DECISION_GATES.md).
+- **dhcp / 169.254 / ipv4ll / arp / icmp / conformance** -> [standards test vectors](../../phase1/STANDARDS_TEST_VECTORS.md), [protocol behavior](../../phase1/PROTOCOL_BEHAVIOR_SPEC.md).
+Read [Phase 1 exit audit](../../phase1/EXIT_AUDIT.md) before considering these ready for production.

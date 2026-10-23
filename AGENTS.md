@@ -8,6 +8,9 @@ Do NOT narrow this project into a diagram editor, fabricated animation, or singl
 ## Phase 1 planning lock (2026-10-23)
 [Phase 1 master plan](phase1/PHASE1_MASTER_PLAN.md) defines comprehensive planning down to implementable contracts; [Phase 1 exit audit](phase1/EXIT_AUDIT.md) currently blocks production engine and app feature coding. Do not mistake CI of Markdown tooling for architecture sign-off. Small throwaway proof-of-feasibility experiments are allowed to falsify high-risk hypotheses; log measurement, source/target hardware, negative cases, licensing and decision. Full production code requires Gate A acceptance and no unaddressed P0 questions. Model the long-term scope without prematurely implementing unvalidated breadth.
 
+## Architecture source and proof requirements
+Read [the Filius reuse audit](phase1/research/FILIUS_REUSE_AUDIT.md) before reusing any legacy engine. Current source-level verdict is **PARTIAL**, NOT approved; older third-party source does NOT establish current Filius v2.14 behavior. Consult [device/port model](phase1/DEVICE_AND_INTERFACE_MODEL.md), [event trace contract](phase1/EVENT_ENGINE_CONTRACT.md), and [standards test vectors](phase1/STANDARDS_TEST_VECTORS.md) before engine work. Do not claim a review is complete until the current tagged source has been inspected and planned packet fixtures actually executed. See [open items](phase1/REVIEW_OPEN_ITEMS.md).
+
 ## Every task
 - Inspect branch/status and likely concurrent work. Avoid duplicating, overwriting or rebasing another worker's branch.
 - Load routed context via `python tools/knowledge.py route <task>`; follow direct graph dependencies and evidence.

@@ -45,3 +45,10 @@ Breadth features such as Wi-Fi radio simulation, BGP, vendor command emulation a
 
 ## Rules for assistant/Codex handoffs
 Read root [AGENTS](../AGENTS.md) and [navigation](../NAVIGATION.md); load [Phase 1](PHASE1_MASTER_PLAN.md) and targeted ICM route. Do not construe an architecture suggestion as code. Report actual branch/commit/test/review status and unresolved risks; no silent assumptions, premature merge or fake passes. When a packet is blocked, identify smallest experiment or required decision and add evidence to [open questions](../knowledge-system/vault/OPEN_QUESTIONS.md).
+
+## Explicit planning handoff updates
+P102: use [Filius source audit](research/FILIUS_REUSE_AUDIT.md) and pin complete tagged source SHA; examine current protocol threading/UI coupling/licenses before choosing reuse.
+P103: treat [device/interface model](DEVICE_AND_INTERFACE_MODEL.md) as S03 draft: validate 10 tests, bridge/SVI/WAN separation before schema freeze.
+P104/P107: use [event contract](EVENT_ENGINE_CONTRACT.md) as S01/S07 draft; repeat deterministic traces with resource budgets and no accidental local ping success.
+P106/P111: run [standards-indexed fixtures](STANDARDS_TEST_VECTORS.md) and document RFC section/model deviations before production claims.
+All unfinished evidence is listed in [REVIEW_OPEN_ITEMS](REVIEW_OPEN_ITEMS.md) and [exit gate](EXIT_AUDIT.md).

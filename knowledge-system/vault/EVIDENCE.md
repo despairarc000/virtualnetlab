@@ -65,3 +65,14 @@ Review-specific inferences and unknowns are labeled in [architecture audit](../.
 - Android foreground/background task guidance cautions restrictions and battery/power overhead: https://developer.android.com/develop/background-work/background-tasks .
 - Filius upstream repository is an educational Java simulator under GPLv2 or GPLv3; reuse needs version-pinned source/legal analysis: https://gitlab.com/filius1/filius .
 These documents are **planning references** and not test evidence that VirtualNetLab implements them.
+
+## Phase 1 current review sources and limits — 2026-10-23
+- Filius official upstream tags: https://gitlab.com/filius1/filius/-/tags (v2.14.0 2026-08-29 / short SHA 6656e245). README https://gitlab.com/filius1/filius/-/blob/master/Readme.md says dual GPLv2 or GPLv3.
+- Alternate distribution listing: https://signpath.org/projects/filius/ says GPLv3-only. **Conflict flagged**, not interpreted as legal answer.
+- Historical Filius per-layer worker starts: https://www.javatips.net/api/filius-master/src/filius/software/system/InternetKnotenBetriebssystem.java . Historical snapshot is NOT current v2.14 source.
+- ns-3 DES / equal-time FIFO and cancel memory tradeoff: https://www.nsnam.org/docs/manual/html/events.html .
+- IPv4LL candidate MUST be probed before use; duplicate detection, rate limits and link-local router forwarding prohibition: https://www.rfc-editor.org/rfc/rfc3927.html §§2,7,9.
+- DHCP initialization, transaction xid, retry and lease state: https://www.rfc-editor.org/rfc/rfc2131.html §§3.1,4.4.
+- ARP packet layout/next-hop address lookup: https://www.rfc-editor.org/rfc/rfc826.html ; host on-link gateway behavior: https://www.rfc-editor.org/rfc/rfc1122.html .
+- Android UI state preservation limits: https://developer.android.com/topic/libraries/architecture/saving-states . Compose `drawWithCache` graphics memory tradeoffs: https://developer.android.com/agents/skills/jetpack-compose/jetpack-compose-performance/references/graphics-performance .
+These citations support **requirements and architecture hypotheses**, not implementation or performance success.
