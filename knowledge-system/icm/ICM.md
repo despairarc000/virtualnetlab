@@ -29,3 +29,12 @@ This route must appear in tools/knowledge.py and its tests.
 - **event / replay / scheduler / trace / virtual-time** -> [event engine contract](../../phase1/EVENT_ENGINE_CONTRACT.md), [spikes](../../architecture/SPIKES_AND_DECISION_GATES.md).
 - **dhcp / 169.254 / ipv4ll / arp / icmp / conformance** -> [standards test vectors](../../phase1/STANDARDS_TEST_VECTORS.md), [protocol behavior](../../phase1/PROTOCOL_BEHAVIOR_SPEC.md).
 Read [Phase 1 exit audit](../../phase1/EXIT_AUDIT.md) before considering these ready for production.
+
+## Complete system planning routes (2026-10-23)
+- **mission / capability / personas / user journey / learn** -> [top-down capability map](../../phase1/TOP_DOWN_CAPABILITY_MAP.md).
+- **stack / forwarding / packet path / media / network layer / device** -> [network stack](../../phase1/NETWORK_STACK_DECOMPOSITION.md), [device profiles](../../phase1/DEVICE_CAPABILITY_CATALOG.md).
+- **profile / switch / router / ap / server / wifi** -> [device catalog](../../phase1/DEVICE_CAPABILITY_CATALOG.md).
+- **diagnostic / assessment / teacher / lesson / learning** -> [diagnostics and learning](../../phase1/DIAGNOSTICS_AND_EDUCATION.md).
+- **save / persistence / import / export / migration / recovery** -> [persistence](../../phase1/PERSISTENCE_AND_COMPATIBILITY.md).
+- **cross-layer / contradictions / gaps / check / audit** -> [cross-layer review](../../phase1/CROSS_LAYER_GAPS.md), [verification matrix](../../phase1/PLANNING_VERIFICATION_MATRIX.md), [queue](../../phase1/REVIEW_PRIORITY_QUEUE.md).
+These are draft planning papers and must not be interpreted by agents as production engine behavior.

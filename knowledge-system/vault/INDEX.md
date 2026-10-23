@@ -48,3 +48,13 @@ Entry standards: heading, date, status, claim/fact vs inference, evidence links,
 - [Virtual time, events, trace identity and replay](../../phase1/EVENT_ENGINE_CONTRACT.md)
 - [Network standards test vectors](../../phase1/STANDARDS_TEST_VECTORS.md)
 - [Priority unresolved evidence](../../phase1/REVIEW_OPEN_ITEMS.md)
+
+## Top-to-bottom Phase 1 system plan
+- [Mission / user workflows / capability coverage](../../phase1/TOP_DOWN_CAPABILITY_MAP.md)
+- [Network stack and end-to-end event pipeline](../../phase1/NETWORK_STACK_DECOMPOSITION.md)
+- [Composable device capability catalog](../../phase1/DEVICE_CAPABILITY_CATALOG.md)
+- [Diagnostics and learning](../../phase1/DIAGNOSTICS_AND_EDUCATION.md)
+- [Storage, checkpoints, migration and recovery](../../phase1/PERSISTENCE_AND_COMPATIBILITY.md)
+- [Cross-layer risk / contradictions](../../phase1/CROSS_LAYER_GAPS.md)
+- [Top-down verification matrix](../../phase1/PLANNING_VERIFICATION_MATRIX.md)
+- [Critical path planning queue](../../phase1/REVIEW_PRIORITY_QUEUE.md)

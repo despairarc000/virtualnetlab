@@ -46,6 +46,21 @@ class KnowledgeTests(unittest.TestCase):
                 self.assertIn(expected, paths)
                 self.assertEqual(len(paths), len(set(paths)))
 
+    def test_top_down_routes_and_reachability(self):
+        queries = [
+            ("mission user journey", "phase1/TOP_DOWN_CAPABILITY_MAP.md"),
+            ("stack forwarding pipeline", "phase1/NETWORK_STACK_DECOMPOSITION.md"),
+            ("device profile wifi", "phase1/DEVICE_CAPABILITY_CATALOG.md"),
+            ("assessment learning", "phase1/DIAGNOSTICS_AND_EDUCATION.md"),
+            ("save import migration", "phase1/PERSISTENCE_AND_COMPATIBILITY.md"),
+            ("cross-layer contradictions audit", "phase1/CROSS_LAYER_GAPS.md"),
+        ]
+        for query, expected in queries:
+            with self.subTest(query=query):
+                _, paths = mod.route(query)
+                self.assertIn(expected, paths)
+        self.assertEqual(mod.doctor(), [])
+
     def test_protocol_route(self):
         _, paths = mod.route("fix dhcp wan switch")
         self.assertTrue(any("LAB_ACCEPTANCE" in p for p in paths))

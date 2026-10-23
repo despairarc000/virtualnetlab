@@ -49,3 +49,11 @@ If a passed design assumption is falsified during implementation, stop dependent
 - X04/X07: [Event/trace contract](EVENT_ENGINE_CONTRACT.md) is **DRAFT**; determinism benchmark/replay traces missing.
 - X06/X12: [standards test vectors](STANDARDS_TEST_VECTORS.md) drafted, not executed. See [open items](REVIEW_OPEN_ITEMS.md).
 - Documentation CI being green does not alter X01–X14 or authorize Phase 2.
+
+## Top-to-bottom extension progress (2026-10-23)
+- X01: [top-down capability map](TOP_DOWN_CAPABILITY_MAP.md) now drafts roles and UJ-01–UJ-10; user task tests/independent review remain OPEN.
+- X03: [device catalog](DEVICE_CAPABILITY_CATALOG.md) and [stack pipeline](NETWORK_STACK_DECOMPOSITION.md) show composed devices, port/bridge/L3/service ownership. S03 experimental schema remains OPEN.
+- X07/X12: [diagnostics and learning](DIAGNOSTICS_AND_EDUCATION.md) states fact-vs-hypothesis, selected-target truth, incomplete trace and assessment semantics; none verified by engine runtime.
+- X09/X10: [persistence and compatibility](PERSISTENCE_AND_COMPATIBILITY.md) specifies versioned LabDesign/session/trace, untrusted import and process recovery. No implementation experiment yet.
+- X13: [cross-layer gap audit](CROSS_LAYER_GAPS.md) identifies 30 implementation-wall risks; [planning verification matrix](PLANNING_VERIFICATION_MATRIX.md) and [queue](REVIEW_PRIORITY_QUEUE.md) track required proof. Their existence is NOT acceptance evidence.
+**Gate A remains NOT READY; no user-facing packet simulator or APK is claimed.**

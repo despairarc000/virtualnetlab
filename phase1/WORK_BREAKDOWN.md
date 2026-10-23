@@ -52,3 +52,10 @@ P103: treat [device/interface model](DEVICE_AND_INTERFACE_MODEL.md) as S03 draft
 P104/P107: use [event contract](EVENT_ENGINE_CONTRACT.md) as S01/S07 draft; repeat deterministic traces with resource budgets and no accidental local ping success.
 P106/P111: run [standards-indexed fixtures](STANDARDS_TEST_VECTORS.md) and document RFC section/model deviations before production claims.
 All unfinished evidence is listed in [REVIEW_OPEN_ITEMS](REVIEW_OPEN_ITEMS.md) and [exit gate](EXIT_AUDIT.md).
+
+## Top-down contract review work packets (additional)
+P115: peer-review [capability map](TOP_DOWN_CAPABILITY_MAP.md), trace UJ-01–UJ-10 to owners/negative cases and confirm incomplete future capabilities are not presented as existing.
+P116: agree on [device composition catalog](DEVICE_CAPABILITY_CATALOG.md) and [stack boundaries](NETWORK_STACK_DECOMPOSITION.md) with two independent implementers. Include multi-interface, bridge+SVI, routed WAN and DHCP relay separation.
+P117: review [diagnostic/assessment schema](DIAGNOSTICS_AND_EDUCATION.md) under missing trace, overlapping IP addresses and multiple functionally valid configurations.
+P118: prototype [save, schema migration and recovery](PERSISTENCE_AND_COMPATIBILITY.md) with simulated process death and malformed project.
+P119: close blocking rows in [cross-layer gaps](CROSS_LAYER_GAPS.md) with evidence, update [verification levels](PLANNING_VERIFICATION_MATRIX.md), then rerun [Phase 1 exit](EXIT_AUDIT.md).

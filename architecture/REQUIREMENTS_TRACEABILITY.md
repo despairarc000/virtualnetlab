@@ -26,3 +26,18 @@ Status: PROPOSED, no executable runtime tests yet | 2026-10-23. Define acceptanc
 
 ### Completion discipline
 A requirement passes only after its test exists and ran successfully with recorded code head, Android/engine version, fixture and oracle. Developer prose and Packet Tracer screenshots are not success evidence. Test IDs assigned in repository as code arrives; update this table and Graphify links in the same PR.
+
+## End-to-end capability trace extension — 2026-10-23
+| UJ | User requirement | Owner / subsystem | Planned proof |
+|---|---|---|---|
+| UJ-01 | Create lab | [device model](../phase1/DEVICE_AND_INTERFACE_MODEL.md), [catalog](../phase1/DEVICE_CAPABILITY_CATALOG.md) | Valid/invalid links and saved project |
+| UJ-02 | Configure | [system contracts](../phase1/SYSTEM_CONTRACTS.md) | UI+CLI+engine config same revision |
+| UJ-03 | Run | [event engine](../phase1/EVENT_ENGINE_CONTRACT.md) | Same seeded traces in live/step |
+| UJ-04 | Inspect | [diagnostics](../phase1/DIAGNOSTICS_AND_EDUCATION.md) | Port/parent/packet/actor trace |
+| UJ-05 | Troubleshoot | [network stack](../phase1/NETWORK_STACK_DECOMPOSITION.md) | Wrong WAN DHCP and source no-route |
+| UJ-06 | Verify | [diagnostics](../phase1/DIAGNOSTICS_AND_EDUCATION.md) | Local self-ping never remote success |
+| UJ-07 | Learn | [diagnostics](../phase1/DIAGNOSTICS_AND_EDUCATION.md) | Equivalent subnet designs score same |
+| UJ-08 | Continue | [persistence](../phase1/PERSISTENCE_AND_COMPATIBILITY.md) | Crash/recovery/migration |
+| UJ-09 | Scale | [Android spec](../phase1/ANDROID_EXPERIENCE_SPEC.md) | 4GB frame/heap/queue benchmark |
+| UJ-10 | Extend | [capability catalog](../phase1/DEVICE_CAPABILITY_CATALOG.md) | Unknown profile rejected, versioned capability |
+Not implemented/verified yet. Read [Phase 1 audit](../phase1/EXIT_AUDIT.md) before promotion.

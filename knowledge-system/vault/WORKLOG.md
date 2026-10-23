@@ -23,3 +23,11 @@
 - Rechecked latest known upstream Filius v2.14.0 tag 2026-08-29, GPL dual-option statement and legacy source showing layer worker start; **no current tagged source-level audit possible through runtime**. Decision remains blocked; no GPL source copied.
 - Drafted device/port/bridge-domain/L3/service composition and WAN DHCP edge-case fixtures; defined scheduler event identity, serial mutation, stale event suppression, trace provenance and overload failure behaviors.
 - Added standards-indexed DHCP/IPv4LL/ARP/ICMP/IPv4/RFC negative cases and urgent evidence debt. Next: S10 tagged-code review and S03/S01/S02/S04 measured spikes; no production code authorization.
+
+## 2026-10-23 — top-down through lowest network layers
+- Found requirements/architecture gap between learning goals and protocol/component boundaries. Wrote 10 use-journeys, full capability tree and reverse evidence map.
+- Mapped packet execution host application/transport/route/neighbor/Ethernet/link/bridge/router/service and back through trace/assessment; distinguished data, control, management, observability and educational planes.
+- Specified composable host/switch/router/SOHO/AP/server profile architecture and explicit unsupported capability declarations.
+- Added evidence-derived diagnostics confidence, trace completeness and semantic rubric constraints; described durable design, checkpoint and trace as separate assets with migration/recovery.
+- Audited 30 cross-layer failure/contradiction cases and authored independent planning verification and evidence-critical path.
+- No runtime spikes were executed. All new docs are DRAFT; Gate A remains blocked.

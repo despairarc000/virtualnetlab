@@ -17,6 +17,7 @@ REQUIRED = (
     "knowledge-system/icm/ICM.md", "knowledge-system/graphify/GRAPHIFY.md",
     "knowledge-system/vault/INDEX.md", "knowledge-system/vault/CHECKPOINT.md",
     "phase1/PHASE1_MASTER_PLAN.md", "phase1/EXIT_AUDIT.md",
+    "phase1/TOP_DOWN_CAPABILITY_MAP.md", "phase1/NETWORK_STACK_DECOMPOSITION.md",
 )
 MD_LINK = re.compile(r"(?<!!)\[[^\]]+\]\(([^)]+)\)")
 BASE = ["AGENTS.md", "NAVIGATION.md", "IDEA_PLAN.md", "TECHNICAL_PLAN.md",
@@ -48,6 +49,19 @@ ROUTES = {
         ("phase1/EVENT_ENGINE_CONTRACT.md", "architecture/SPIKES_AND_DECISION_GATES.md")),
     "standards_tests": (("dhcp", "ipv4ll", "169", "arp", "icmp", "conformance", "rfc"),
         ("phase1/STANDARDS_TEST_VECTORS.md", "phase1/PROTOCOL_BEHAVIOR_SPEC.md")),
+    "capabilities": (("mission", "capability", "personas", "journey", "learn"),
+        ("phase1/TOP_DOWN_CAPABILITY_MAP.md", "phase1/PLANNING_VERIFICATION_MATRIX.md")),
+    "stack": (("stack", "forwarding", "pipeline", "media", "network-layer"),
+        ("phase1/NETWORK_STACK_DECOMPOSITION.md", "phase1/DEVICE_CAPABILITY_CATALOG.md")),
+    "profiles": (("profile", "device", "ap", "server", "wifi"),
+        ("phase1/DEVICE_CAPABILITY_CATALOG.md",)),
+    "diagnostics_learning": (("diagnostic", "assessment", "teacher", "lesson", "learning"),
+        ("phase1/DIAGNOSTICS_AND_EDUCATION.md",)),
+    "persistence": (("save", "persistence", "import", "export", "migration", "recovery"),
+        ("phase1/PERSISTENCE_AND_COMPATIBILITY.md",)),
+    "cross_layer": (("cross-layer", "contradictions", "gaps", "audit", "verification"),
+        ("phase1/CROSS_LAYER_GAPS.md", "phase1/PLANNING_VERIFICATION_MATRIX.md",
+         "phase1/REVIEW_PRIORITY_QUEUE.md")),
     "handoff": (("handoff", "status", "continue", "checkpoint", "next"),
         ("knowledge-system/vault/CHECKPOINT.md", "knowledge-system/vault/WORKLOG.md", "knowledge-system/vault/OPEN_QUESTIONS.md")),
 }
@@ -141,6 +155,20 @@ def doctor(root=ROOT):
     for doc in docs:
         if "knowledge-system/vault/" in path_key(doc, root) and doc.resolve() not in visited:
             errors.append(f"Vault page unreachable from INDEX: {path_key(doc, root)}")
+    # Phase 1 contains self-contained, fully discoverable design documents.
+    phase_root = (root / "phase1/PHASE1_MASTER_PLAN.md").resolve()
+    phase_visited = set()
+    if phase_root.exists():
+        todo = deque([phase_root])
+        while todo:
+            current = todo.popleft()
+            if current in phase_visited or not current.is_file() or current.suffix != ".md":
+                continue
+            phase_visited.add(current)
+            todo.extend(link for _, link in local_links(current, root) if link not in phase_visited)
+    for doc in docs:
+        if path_key(doc, root).startswith("phase1/") and doc.resolve() not in phase_visited:
+            errors.append(f"Phase 1 document unreachable from master: {path_key(doc, root)}")
     for name, (_, paths) in ROUTES.items():
         for path in paths:
             if not (root / path).is_file():

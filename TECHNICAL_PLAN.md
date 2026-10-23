@@ -67,3 +67,6 @@ Read [AGENTS.md](AGENTS.md). No announced protocol support without standards-bac
 - [RFC-indexed positive/negative fixtures](phase1/STANDARDS_TEST_VECTORS.md)
 - [Open evidence register](phase1/REVIEW_OPEN_ITEMS.md)
 These are proposed design contracts, not validated runtimes. Gate A remains blocked.
+
+## Cross-layer top-to-bottom coverage (2026-10-23)
+[Functional capability map](phase1/TOP_DOWN_CAPABILITY_MAP.md) → [device profile composition](phase1/DEVICE_CAPABILITY_CATALOG.md) → [network stack and packet execution](phase1/NETWORK_STACK_DECOMPOSITION.md) → [actual trace and educational interpretation](phase1/DIAGNOSTICS_AND_EDUCATION.md) → [offline persistence](phase1/PERSISTENCE_AND_COMPATIBILITY.md). Audit all 30 documented [cross-layer gaps](phase1/CROSS_LAYER_GAPS.md), evidence matrix [here](phase1/PLANNING_VERIFICATION_MATRIX.md), and [priority queue](phase1/REVIEW_PRIORITY_QUEUE.md). These are detailed draft plans, not built functionality. S03 topology model remains the first recommended disposable proof experiment.

@@ -5,6 +5,11 @@ Authoritative cold-start map. Open this file after [AGENTS.md](AGENTS.md). Docum
 |---|---|---|
 | Purpose, user goals, product constraints | [IDEA_PLAN.md](IDEA_PLAN.md) | [TECHNICAL_PLAN.md](TECHNICAL_PLAN.md) |
 | Current state, branch, handoff | [CHECKPOINT.md](knowledge-system/vault/CHECKPOINT.md) | [WORKLOG.md](knowledge-system/vault/WORKLOG.md) |
+| **Phase 1: mission → complete capability decomposition** | [TOP_DOWN_CAPABILITY_MAP.md](phase1/TOP_DOWN_CAPABILITY_MAP.md) | [PLANNING_VERIFICATION_MATRIX.md](phase1/PLANNING_VERIFICATION_MATRIX.md) |
+| **Phase 1: actual network execution pipeline** | [NETWORK_STACK_DECOMPOSITION.md](phase1/NETWORK_STACK_DECOMPOSITION.md) | [DEVICE_CAPABILITY_CATALOG.md](phase1/DEVICE_CAPABILITY_CATALOG.md) |
+| **Phase 1: diagnostics and learning** | [DIAGNOSTICS_AND_EDUCATION.md](phase1/DIAGNOSTICS_AND_EDUCATION.md) | [STANDARDS_TEST_VECTORS.md](phase1/STANDARDS_TEST_VECTORS.md) |
+| **Phase 1: storage and consistency** | [PERSISTENCE_AND_COMPATIBILITY.md](phase1/PERSISTENCE_AND_COMPATIBILITY.md) | [CROSS_LAYER_GAPS.md](phase1/CROSS_LAYER_GAPS.md) |
+| **Phase 1: unresolved and execution order** | [REVIEW_PRIORITY_QUEUE.md](phase1/REVIEW_PRIORITY_QUEUE.md) | [EXIT_AUDIT.md](phase1/EXIT_AUDIT.md) |
 | **Phase 1: planning and design** | [PHASE1_MASTER_PLAN.md](phase1/PHASE1_MASTER_PLAN.md) | [SYSTEM_CONTRACTS.md](phase1/SYSTEM_CONTRACTS.md), [EXIT_AUDIT.md](phase1/EXIT_AUDIT.md) |
 | **Phase 1: protocol and Android detail** | [PROTOCOL_BEHAVIOR_SPEC.md](phase1/PROTOCOL_BEHAVIOR_SPEC.md) | [ANDROID_EXPERIENCE_SPEC.md](phase1/ANDROID_EXPERIENCE_SPEC.md), [FAILURE_AND_SECURITY_ATLAS.md](phase1/FAILURE_AND_SECURITY_ATLAS.md) |
 | **Phase 1: decisions and work packets** | [DECISION_GATES.md](phase1/DECISION_GATES.md) | [WORK_BREAKDOWN.md](phase1/WORK_BREAKDOWN.md) |

@@ -27,3 +27,11 @@ RFC 3927 requires probing and forbids routing packets with IPv4LL source/destina
 
 ## Execution discipline
 Keep unresolved assumptions P0 and blocking. Spikes and small throwaway tests can be planned/executed but no full-feature production coding. Prioritize *smallest proof that could invalidate design*. Each completed item requires evidence links, date, owner, reproducible commands/test results and revision to [decision log](../architecture/DECISION_LOG.md). A completed doc only counts as DRAFT/REVIEWED, not measured evidence.
+
+## Cross-layer gaps still needing proof (2026-10-23)
+- New [top-down capability map](TOP_DOWN_CAPABILITY_MAP.md) and [planning verification matrix](PLANNING_VERIFICATION_MATRIX.md) cover user workflows, domain, execution, evidence, storage and APK delivery. Role testing OPEN.
+- [Network stack decomposition](NETWORK_STACK_DECOMPOSITION.md) now distinguishes interface table, actual routing/neighbor forwarding, control state, service binding, trace projection and UI; packet pipeline contracts need spike proof.
+- [Device capability catalog](DEVICE_CAPABILITY_CATALOG.md) prevents hardcoding router/switch icons as protocol support. Composite SOHO router + multi-NIC, VLAN and Wi-Fi extension checks OPEN.
+- [Diagnostics and learning](DIAGNOSTICS_AND_EDUCATION.md) defines semantic scenario grading, causal proof and incomplete evidence; rubric DSL design and test still OPEN.
+- [Persistence and compatibility](PERSISTENCE_AND_COMPATIBILITY.md) distinguishes durable design vs optional checkpoint/trace and adds migration/import attack cases; S05/S06 OPEN.
+- [Cross-layer contradictions](CROSS_LAYER_GAPS.md) lists 30 individual potential dead ends; prioritize CL-01..CL-08 before Gate A signoff.

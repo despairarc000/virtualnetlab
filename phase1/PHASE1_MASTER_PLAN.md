@@ -64,3 +64,6 @@ Complete and review [system contracts](SYSTEM_CONTRACTS.md), [protocol behavior]
 - [Protocol/RFC behavior vectors](STANDARDS_TEST_VECTORS.md) — DHCP, IPv4LL, ARP, ICMP, host routing, event isolation and Android lifecycle
 - [P0/P1 open items and evidence debt](REVIEW_OPEN_ITEMS.md)
 These additions increase design specificity but do not change [exit audit](EXIT_AUDIT.md) from NOT READY.
+
+## Scope vocabulary
+Use [shared glossary and decision rules](GLOSSARY_AND_DECISION_RULES.md) to distinguish simulation, emulation, protocol fidelity, supported subset, unknowns, documented assumptions, and accepted interfaces. The glossary is required reading for independent design review.

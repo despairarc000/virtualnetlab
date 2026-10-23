@@ -24,3 +24,15 @@ We use a deterministic virtual-network simulation engine as the baseline, with a
 This is an independent educational networking laboratory, not an official Cisco product. Do not add proprietary network operating system images, trademarked assets, or copied implementation code.
 
 Research, architecture, milestones, accepted decisions and outstanding validation are documented in the repository.
+
+## Top-down architecture planning
+- [Full capability map](phase1/TOP_DOWN_CAPABILITY_MAP.md)
+- [End-to-end stack execution and interface boundaries](phase1/NETWORK_STACK_DECOMPOSITION.md)
+- [Composable device capability catalog](phase1/DEVICE_CAPABILITY_CATALOG.md)
+- [Diagnostics, learning and assessment](phase1/DIAGNOSTICS_AND_EDUCATION.md)
+- [Offline storage, versioning and failure recovery](phase1/PERSISTENCE_AND_COMPATIBILITY.md)
+- [Cross-layer contradictions and gaps](phase1/CROSS_LAYER_GAPS.md)
+- [Planning verification matrix](phase1/PLANNING_VERIFICATION_MATRIX.md)
+- [Decision-critical planning queue](phase1/REVIEW_PRIORITY_QUEUE.md)
+
+**Phase 1 status:** drafted contracts, NOT gate-approved; no network engine or Android app built yet.

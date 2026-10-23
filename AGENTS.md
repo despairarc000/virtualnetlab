@@ -39,3 +39,6 @@ Read [the Filius reuse audit](phase1/research/FILIUS_REUSE_AUDIT.md) before reus
 `python tools/knowledge.py doctor`
 `python -m unittest discover -s tests`
 When generated dependency output is introduced, regenerate and compare as part of CI.
+
+## Top-down and bottom-up architecture rule
+Before implementing a new device, network protocol, UI operation, CLI command, save format or scenario, trace the user-facing requirement through [TOP_DOWN_CAPABILITY_MAP](phase1/TOP_DOWN_CAPABILITY_MAP.md) -> [NETWORK_STACK_DECOMPOSITION](phase1/NETWORK_STACK_DECOMPOSITION.md) -> [DEVICE_CAPABILITY_CATALOG](phase1/DEVICE_CAPABILITY_CATALOG.md) -> [DIAGNOSTICS_AND_EDUCATION](phase1/DIAGNOSTICS_AND_EDUCATION.md) -> [PERSISTENCE_AND_COMPATIBILITY](phase1/PERSISTENCE_AND_COMPATIBILITY.md). Check [CROSS_LAYER_GAPS](phase1/CROSS_LAYER_GAPS.md), [PLANNING_VERIFICATION_MATRIX](phase1/PLANNING_VERIFICATION_MATRIX.md) and [EXIT_AUDIT](phase1/EXIT_AUDIT.md). No implicit magic shortcuts across layers or false claims of measured conformance.

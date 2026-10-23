@@ -76,3 +76,10 @@ These documents are **planning references** and not test evidence that VirtualNe
 - ARP packet layout/next-hop address lookup: https://www.rfc-editor.org/rfc/rfc826.html ; host on-link gateway behavior: https://www.rfc-editor.org/rfc/rfc1122.html .
 - Android UI state preservation limits: https://developer.android.com/topic/libraries/architecture/saving-states . Compose `drawWithCache` graphics memory tradeoffs: https://developer.android.com/agents/skills/jetpack-compose/jetpack-compose-performance/references/graphics-performance .
 These citations support **requirements and architecture hypotheses**, not implementation or performance success.
+
+## Cross-layer reference addendum (2026-10-23)
+- INET network interface table and physical channel design (interface registry distinct from ports/link transmission): https://github.com/inet-framework/inet/blob/master/doc/src/users-guide/ch-network-interfaces.rst . External architectural reference, **not** reused code.
+- RFC 1812 §5.2–5.3 on IPv4 router forwarding/local delivery and TTL behavior: https://www.rfc-editor.org/rfc/rfc1812.html . Router processing for own IP need not be forwarded; TTL semantics matter.
+- RFC 3927 §§2.6/7 forbids IPv4 link-local packets forwarded by routers: https://www.rfc-editor.org/rfc/rfc3927.html . This is stronger than "no gateway from APIPA".
+- Android offline-first local sources are source of truth for app data: https://developer.android.com/topic/architecture/data-layer/offline-first . Applied as design for offline saved labs, not proof Room/database choice.
+- ns-3 event manual: timestamp order and same-time event ID tie resolution: https://www.nsnam.org/docs/manual/html/events.html . A design reference only.
