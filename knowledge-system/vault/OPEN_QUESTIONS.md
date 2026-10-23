@@ -15,3 +15,15 @@ Status: ACTIVE questions. No implicit approval of an answer.
 | Q10 | When do we need virtual time vs real-time mode and background app lifecycle handling? | Engine/Android | Timers, replay, process death/instrumentation tests |
 
 Record experiments, commit refs and tests when resolving. Move accepted outcomes into ADRs and update NAVIGATION, CHECKPOINT and implementation plan.
+
+## Architecture review P0 resolutions pending (do not freeze decisions)
+- S01: virtual integer-tick unit, event cancellation and same-tick flood rate; required [spike](../../architecture/SPIKES_AND_DECISION_GATES.md).
+- S02: typed vs byte-backed PDU architecture, PCAP fidelity boundary and memory budget.
+- S03: profile/port/broadcast-domain representation for integrated wireless routers and logical bridges.
+- S04: Compose Canvas/custom View performance under large topology and constrained phone memory.
+- S05: exact portable project container, checkpoint format, migration and secure import schema.
+- S06: Android process lifecycle, run/pause semantics and resource budget on real hardware.
+- S07: probe identity proof and path assertions under overlapping IPs.
+- S08: explicit protocol implementation/fidelity level and independent oracle.
+- S09: external backend extension boundary / privacy and permission architecture.
+See [source review](../../architecture/SOURCE_EVALUATION.md), [risks](../../architecture/RISK_REGISTER.md) and [decision log](../../architecture/DECISION_LOG.md).

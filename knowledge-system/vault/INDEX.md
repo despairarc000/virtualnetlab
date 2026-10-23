@@ -12,3 +12,21 @@ A curated, provenance-aware Markdown knowledge base. Use [navigation](../../NAVI
 - [LAB_ACCEPTANCE.md](specs/LAB_ACCEPTANCE.md) — acceptance scenarios and adversarial behavior.
 
 Entry standards: heading, date, status, claim/fact vs inference, evidence links, dependencies, result/next check. Historical notes are preserved and annotated rather than silently rewritten.
+
+## Architecture review package
+- [architecture audit](../../architecture/ARCHITECTURE_REVIEW.md)
+- [architecture blueprint](../../architecture/ARCHITECTURE_BLUEPRINT.md)
+- [source and license evaluation](../../architecture/SOURCE_EVALUATION.md)
+- [requirements traceability](../../architecture/REQUIREMENTS_TRACEABILITY.md)
+- [validation strategy](../../architecture/VALIDATION_STRATEGY.md)
+- [risk register](../../architecture/RISK_REGISTER.md)
+- [spikes and decision gates](../../architecture/SPIKES_AND_DECISION_GATES.md)
+- [execution roadmap](../../architecture/IMPLEMENTATION_ROADMAP.md)
+- [decision register](../../architecture/DECISION_LOG.md)
+
+## New architecture ADRs (proposed, pending spikes)
+- [ADR-0003 state and time](decisions/ADR-0003-STATE-AND-TIME.md)
+- [ADR-0004 packet and fidelity](decisions/ADR-0004-PACKET-AND-FIDELITY.md)
+- [ADR-0005 ports and identity](decisions/ADR-0005-PORTS-AND-IDENTITY.md)
+- [ADR-0006 persistence and lifecycle](decisions/ADR-0006-PERSISTENCE-AND-LIFECYCLE.md)
+- [ADR-0007 extensions and security](decisions/ADR-0007-EXTENSIONS-AND-SECURITY.md)

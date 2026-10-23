@@ -14,3 +14,7 @@ Root [NAVIGATION.md](../../NAVIGATION.md) is the bootstrap. Run `python tools/kn
 
 ## Update contract
 When a file moves, update ICM route map and Markdown links, run doctor. When source files are added, Graphify discovers Python imports and Markdown links, but semantic requirements/test links must be manually explicit. Route output is context recommendation, not implementation authorization.
+
+## Architecture review route
+- **architecture / design / tradeoffs / risk / scalability / decision / validation** -> [review](../../architecture/ARCHITECTURE_REVIEW.md), [blueprint](../../architecture/ARCHITECTURE_BLUEPRINT.md), [decision log](../../architecture/DECISION_LOG.md), [risks](../../architecture/RISK_REGISTER.md), [spikes](../../architecture/SPIKES_AND_DECISION_GATES.md), [roadmap](../../architecture/IMPLEMENTATION_ROADMAP.md).
+This route must appear in tools/knowledge.py and its tests.

@@ -31,6 +31,10 @@ ROUTES = {
         ("knowledge-system/vault/research/NETWORK_SIMULATORS.md", "knowledge-system/vault/EVIDENCE.md", "knowledge-system/vault/decisions/ADR-0001-ENGINE.md")),
     "knowledge": (("knowledge", "navigation", "graph", "icm", "vault", "documentation"),
         ("knowledge-system/icm/ICM.md", "knowledge-system/graphify/GRAPHIFY.md", "knowledge-system/vault/INDEX.md")),
+    "architecture": (("architecture", "design", "tradeoffs", "risk", "scalability", "decision", "validation"),
+        ("architecture/ARCHITECTURE_REVIEW.md", "architecture/ARCHITECTURE_BLUEPRINT.md",
+         "architecture/DECISION_LOG.md", "architecture/RISK_REGISTER.md",
+         "architecture/SPIKES_AND_DECISION_GATES.md", "architecture/IMPLEMENTATION_ROADMAP.md")),
     "handoff": (("handoff", "status", "continue", "checkpoint", "next"),
         ("knowledge-system/vault/CHECKPOINT.md", "knowledge-system/vault/WORKLOG.md", "knowledge-system/vault/OPEN_QUESTIONS.md")),
 }

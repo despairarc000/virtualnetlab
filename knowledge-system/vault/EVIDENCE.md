@@ -28,3 +28,22 @@ Keep independent observations separate from official docs and hypotheses. Record
 - ARP RFC 826: https://www.rfc-editor.org/rfc/rfc826.html — address resolution.
 - ICMP RFC 792: https://www.rfc-editor.org/rfc/rfc792.html — IPv4 control messages.
 - Traditional STP port states and timing (Cisco reference): https://www.cisco.com/c/en/us/support/docs/switches/catalyst-6500-series-switches/24330-185.html — model only the selected STP profile.
+
+## Architecture review primary sources (2026-10-23)
+| ID | Observed source statement | Primary URL | Limits |
+|---|---|---|---|
+| S10 | ns-3 uses discrete-time scheduler; equal-time events ordered by unique event ID | https://www.nsnam.org/docs/manual/html/events.html | Architecture reference, not direct library reuse |
+| S11 | ns-3's software is GNU GPLv2 | https://www.nsnam.org/about/ | Any incorporation requires license analysis |
+| S12 | OMNeT++ is modular discrete-event infrastructure, INET supplies models | https://doc.omnetpp.org/omnetpp/manual/ and https://inet.omnetpp.org/docs/developers-guide/ch-introduction.html | Its Academic Public License restricts commercial use |
+| S13 | OMNeT++ Academic Public License / commercial option | https://omnetpp.org/intro/license.html | External counsel may be required before integration |
+| S14 | GNS3's GUI/controller/compute/emulator separation | https://docs.gns3.com/docs/using-gns3/design/architecture | Useful later for remote optional backend |
+| S15 | CORE uses namespaces/virtual Ethernet on Linux | https://github.com/coreemu/core/blob/master/docs/architecture.md | Not native unprivileged Android default |
+| S16 | Android favors separation of concerns and single source of truth | https://developer.android.com/topic/architecture | Doesn't prove Compose Canvas performance |
+| S17 | Android's offline-first and process/lifecycle constraints | https://developer.android.com/topic/architecture/data-layer/offline-first and https://developer.android.com/develop/background-work/background-tasks | Must validate Android lifecycle empirically |
+| S18 | Android recommends Macrobenchmark for frame/UI performance | https://developer.android.com/topic/performance/benchmarking/macrobenchmark-overview | Does not supply performance numbers |
+| S19 | Android Storage Access Framework and Room document persistence options | https://developer.android.com/guide/topics/providers/document-provider and https://developer.android.com/training/data-storage/room | Candidate, not format decision |
+| S20 | RFC 1122 host-layer requirements and RFC 1812 IPv4 router requirements | https://www.rfc-editor.org/rfc/rfc1122.html and https://www.rfc-editor.org/rfc/rfc1812.html | Older texts may have updates/errata; track model subset |
+| S21 | Kotlin Serialization supports JSON and configurable unknown-key behavior | https://kotlinlang.org/docs/serialization.html and https://kotlinlang.org/docs/serialization-json-configuration.html | Strict semantic validation still mandatory |
+| S22 | Android recommends accessibility support, including larger touch targets | https://developer.android.com/guide/topics/ui/accessibility/apps | Real device testing remains needed |
+
+Review-specific inferences and unknowns are labeled in [architecture audit](../../architecture/ARCHITECTURE_REVIEW.md).

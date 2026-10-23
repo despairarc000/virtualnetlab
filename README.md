@@ -6,6 +6,9 @@
 
 - [Project vision](IDEA_PLAN.md)
 - [Implementation roadmap](TECHNICAL_PLAN.md)
+- [Architecture review and outstanding decision gates](architecture/ARCHITECTURE_REVIEW.md)
+- [Architecture blueprint](architecture/ARCHITECTURE_BLUEPRINT.md)
+- [Validation and implementation gates](architecture/VALIDATION_STRATEGY.md)
 - [Knowledge & navigation](NAVIGATION.md)
 - [Contribution rules](AGENTS.md)
 - [Research and decisions](knowledge-system/vault/INDEX.md)

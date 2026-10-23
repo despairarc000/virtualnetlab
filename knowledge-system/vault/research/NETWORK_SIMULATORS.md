@@ -38,3 +38,10 @@ A Linux namespace/bridge/container or QEMU lab running full router operating sys
 
 ## Further research before implementation
 Protocol standards/RFCs, reference packet captures and constrained-device benchmarks; current third-party licenses, build distributions and alternatives; independent traces for compatibility-sensitive behavior.
+
+## October 2026 deeper architecture review update
+- Actual ns-3 scheduling ties use monotonic event IDs; design our own order contract without importing GPLv2 code: https://www.nsnam.org/docs/manual/html/events.html and https://www.nsnam.org/about/
+- OMNeT++ is under Academic Public License; external commercial distribution/use can require commercial licensing, so it is **NOT** a drop-in LGPL module: https://omnetpp.org/intro/license.html
+- GNS3 divides topology client from controller/compute/emulator nodes; this supports future optional remote backend separation, not a decision to use one now: https://docs.gns3.com/docs/using-gns3/design/architecture
+- CORE's Linux namespace networking depends on host facilities: https://github.com/coreemu/core/blob/master/docs/architecture.md
+- Review is now indexed through [source evaluation](../../../architecture/SOURCE_EVALUATION.md) and [architecture audit](../../../architecture/ARCHITECTURE_REVIEW.md). Comparisons are qualitative, not measured Android performance.

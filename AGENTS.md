@@ -8,6 +8,7 @@ Do NOT narrow this project into a diagram editor, fabricated animation, or singl
 ## Every task
 - Inspect branch/status and likely concurrent work. Avoid duplicating, overwriting or rebasing another worker's branch.
 - Load routed context via `python tools/knowledge.py route <task>`; follow direct graph dependencies and evidence.
+- For engine/API/storage/canvas decisions, check [Architecture Review](architecture/ARCHITECTURE_REVIEW.md), [Gate A spikes](architecture/SPIKES_AND_DECISION_GATES.md), [Risks](architecture/RISK_REGISTER.md) and [Decision Log](architecture/DECISION_LOG.md) before freezing contracts.
 - State acceptance/negative cases *before* implementation. Keep independent facts, hypotheses, planned code, tested behavior, and unsupported features distinct.
 - Make small auditable changes; use implementations with stable IDs, strict validation and reason-coded failures.
 - Build tests for success, failure, replay, malformed input, topology ambiguity and cross-layer consistency.

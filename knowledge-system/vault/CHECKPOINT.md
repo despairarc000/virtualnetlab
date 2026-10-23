@@ -1,26 +1,23 @@
-# Checkpoint — 2026-10-23
-Status: ACTIVE record | Branch baseline: main | Phase: repository bootstrap / Stage 0
+# Checkpoint — 2026-10-23 Architecture Review
+Status: ACTIVE checkpoint | Branch: main baseline (architecture document change pending verification in CI).
 
-## Verified in this checkpoint
-- Repository exists and is writable.
-- Product vision from conversation is captured as [IDEA_PLAN.md](../../IDEA_PLAN.md).
-- Comparative primary-source research and architecture decisions are written in [NETWORK_SIMULATORS.md](research/NETWORK_SIMULATORS.md) and [ADR-0001](decisions/ADR-0001-ENGINE.md).
-- Knowledge navigation, ICM and Graphify tooling are introduced with tests. Initial GitHub Actions run **39930966470** at commit `c0f8bd022f7429c43cf13aac3122bf70c2a8dc2f` completed SUCCESS (doctor and 5 unit tests). Later changes require their own passing CI before claiming validation.
+## Verified from previously completed work
+- Repository documentation/bootstrap, ICM, Graphify and doctor implemented.
+- GitHub Actions 39931183839 on commit `badcbbbad260e33d66fd1aec923fc5e630cbcf57` completed **SUCCESS** for doctor, graph and six Python knowledge tests.
+- Vision and first regression narratives are captured.
+## Architecture review work
+- Audited scope against GNS3, ns-3, OMNeT++/INET, CORE, containerlab and Android guidance plus DHCP/IPv4LL/ARP/ICMP host/router standards.
+- Produced [architecture audit](../../architecture/ARCHITECTURE_REVIEW.md), [blueprint](../../architecture/ARCHITECTURE_BLUEPRINT.md), [reviewed roadmap](../../architecture/IMPLEMENTATION_ROADMAP.md), [risk register](../../architecture/RISK_REGISTER.md), [validation](../../architecture/VALIDATION_STRATEGY.md), [decision spikes](../../architecture/SPIKES_AND_DECISION_GATES.md), [traceability](../../architecture/REQUIREMENTS_TRACEABILITY.md), [source evaluation](../../architecture/SOURCE_EVALUATION.md), [ADR register](../../architecture/DECISION_LOG.md) and ADR 0003–0007.
+- Committed architecture review's CI status must be checked against its own head; previous CI success is not proof of future code.
 
-## Explicitly NOT completed
-- No Kotlin simulator, deterministic engine, Android UI, Android APK, packet protocol implementation or Android-device benchmark has been built.
-- No feature-for-feature Packet Tracer equivalence or compatibility is asserted.
-- No physical packet validation tests against external equipment have run.
+## Strict NOT DONE
+No Kotlin engine, Android app, APK, device profile, measured performance, network protocol state machine or standards conformance tests exist. All new architecture choices besides prior DES/Kotlin baseline are **proposed contracts pending proof**. No lab schema/version is frozen.
 
-## Current proposed architectural baseline
-Headless deterministic discrete-event simulator + independently testable Kotlin domain modules + Compose presentation + versioned model and trace. External emulation backends are optional future extensions.
+## Next / high priority
+1. Execute S01–S04 (event kernel, PDU representation, port/domains, Android canvas) as measured disposable prototypes on branches.
+2. Cross-reference requirements and RFC sections to executable fixtures before stage G1.
+3. Validate import security, lifecycle and license boundary (S05, S06, S09).
+4. Make Gate A decisions with evidence; update ADRs, docs, tests, checkpoint and support matrix.
+5. Start G1 headless engine after Gate A, while keeping Android feasibility tests ongoing.
 
-## Next
-1. Verify knowledge doctor/tests and inspect CI result when available.
-2. Define Stage 1 machine-readable topology, event schema and reason taxonomy.
-3. Add headless scheduler tests and network actors on an implementation branch.
-4. Write minimal scripted golden topology with expected trace.
-5. Reconcile architecture decisions with measured JVM/Android constraints and update evidence.
-
-## Handoff
-Read [root instructions](../../AGENTS.md), [navigation](../../NAVIGATION.md), [vision](../../IDEA_PLAN.md), [plan](../../TECHNICAL_PLAN.md), and [open questions](OPEN_QUESTIONS.md). Update branch, head SHA, validated commands and defects on next checkpoint.
+Handoff: [AGENTS](../../AGENTS.md) -> [NAVIGATION](../../NAVIGATION.md) -> [IDEA_PLAN](../../IDEA_PLAN.md) -> [technical plan](../../TECHNICAL_PLAN.md) -> [audit](../../architecture/ARCHITECTURE_REVIEW.md) -> [Gate A](../../architecture/SPIKES_AND_DECISION_GATES.md).

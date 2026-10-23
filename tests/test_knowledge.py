@@ -20,6 +20,12 @@ class KnowledgeTests(unittest.TestCase):
         self.assertTrue(any("ADR-0001" in p for p in paths))
         self.assertEqual(len(paths), len(set(paths)))
 
+    def test_architecture_route(self):
+        hits, paths = mod.route("architecture risk decision review")
+        self.assertIn(("architecture", 3), hits)
+        self.assertIn("architecture/ARCHITECTURE_REVIEW.md", paths)
+        self.assertIn("architecture/RISK_REGISTER.md", paths)
+
     def test_protocol_route(self):
         _, paths = mod.route("fix dhcp wan switch")
         self.assertTrue(any("LAB_ACCEPTANCE" in p for p in paths))
