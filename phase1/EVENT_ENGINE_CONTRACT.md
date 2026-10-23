@@ -56,5 +56,5 @@ Trace output: packetHeaderSummary, before/after state refs (or delta), event rea
 - Deliberately create switching loop without STP; bounded pause under storm, deterministic trace and explicit non-success.
 - Validate smallest possible tick, near-maximum tick and overflow, zero-time recurrence and fair ability to pause.
 - Run under JVM and Android-equivalent runtime; measure CPU/heap/GC and compare semantic trace hashes; no arbitrary performance claim until done.
-`
-`NOTE: pseudo-semantics; implementation specifics not frozen.
+
+**Note:** Proposed pseudosemantics only; implementation details remain unfrozen pending the S01 proof.
