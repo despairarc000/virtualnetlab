@@ -31,6 +31,12 @@ class KnowledgeTests(unittest.TestCase):
             errs = mod.doctor(root)
             self.assertTrue(any("Broken local link" in e for e in errs))
 
+    def test_rendered_graph(self):
+        report = mod.graph_report()
+        self.assertIn("Graphify derived relationships", report)
+        self.assertIn("| From | To | Type |", report)
+        self.assertNotIn("\\`", report)
+
     def test_graph_edges_stable(self):
         a = mod.graph_edges()
         self.assertEqual(a, sorted(a))

@@ -5,7 +5,7 @@ Status: ACTIVE record | Branch baseline: main | Phase: repository bootstrap / St
 - Repository exists and is writable.
 - Product vision from conversation is captured as [IDEA_PLAN.md](../../IDEA_PLAN.md).
 - Comparative primary-source research and architecture decisions are written in [NETWORK_SIMULATORS.md](research/NETWORK_SIMULATORS.md) and [ADR-0001](decisions/ADR-0001-ENGINE.md).
-- Knowledge navigation, ICM and Graphify tooling are introduced with tests; whether GitHub CI passes is recorded separately when checked.
+- Knowledge navigation, ICM and Graphify tooling are introduced with tests. Initial GitHub Actions run **39930966470** at commit `c0f8bd022f7429c43cf13aac3122bf70c2a8dc2f` completed SUCCESS (doctor and 5 unit tests). Later changes require their own passing CI before claiming validation.
 
 ## Explicitly NOT completed
 - No Kotlin simulator, deterministic engine, Android UI, Android APK, packet protocol implementation or Android-device benchmark has been built.

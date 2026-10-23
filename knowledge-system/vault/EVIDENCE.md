@@ -20,3 +20,11 @@ Status: ACTIVE | 2026-10-23. Sources are references, not imported/copied source 
 
 ## Source use rules
 Keep independent observations separate from official docs and hypotheses. Record source URL, date, build/version and experiment when validating. Standards-based models need RFC/IEEE references at implementation time and a model deviation registry.
+
+
+## Protocol specifications to consult at implementation
+- DHCPv4 RFC 2131: https://www.rfc-editor.org/rfc/rfc2131.html — formal DHCP client/server states, port use, retries and broadcasts; model deviations must be documented.
+- IPv4 Link-Local RFC 3927: https://www.rfc-editor.org/rfc/rfc3927.html — IPv4LL 169.254/16 acquisition, probes and collisions; distinguish APIPA as a host policy, not DHCP success.
+- ARP RFC 826: https://www.rfc-editor.org/rfc/rfc826.html — address resolution.
+- ICMP RFC 792: https://www.rfc-editor.org/rfc/rfc792.html — IPv4 control messages.
+- Traditional STP port states and timing (Cisco reference): https://www.cisco.com/c/en/us/support/docs/switches/catalyst-6500-series-switches/24330-185.html — model only the selected STP profile.

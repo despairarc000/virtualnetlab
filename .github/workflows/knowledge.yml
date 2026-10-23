@@ -12,5 +12,7 @@ jobs:
           python-version: '3.11'
       - name: Validate docs and ICM/Graphify
         run: python tools/knowledge.py doctor
+      - name: Validate graph output generation
+        run: python tools/knowledge.py graph > /dev/null
       - name: Run knowledge tests
         run: python -m unittest discover -s tests -v
