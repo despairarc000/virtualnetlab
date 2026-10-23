@@ -1,5 +1,5 @@
 # Checkpoint — 2026-10-23 Architecture Review
-Status: ACTIVE checkpoint | Branch: main baseline (architecture document change pending verification in CI).
+Status: ACTIVE checkpoint | Phase 1 planning and evidence gathering; **Gate A NOT PASSED** | 2026-10-23.
 
 ## Verified from previously completed work
 - Repository documentation/bootstrap, ICM, Graphify and doctor implemented.
@@ -21,3 +21,7 @@ No Kotlin engine, Android app, APK, device profile, measured performance, networ
 5. Start G1 headless engine after Gate A, while keeping Android feasibility tests ongoing.
 
 Handoff: [AGENTS](../../AGENTS.md) -> [NAVIGATION](../../NAVIGATION.md) -> [IDEA_PLAN](../../IDEA_PLAN.md) -> [technical plan](../../TECHNICAL_PLAN.md) -> [audit](../../architecture/ARCHITECTURE_REVIEW.md) -> [Gate A](../../architecture/SPIKES_AND_DECISION_GATES.md).
+
+## Phase 1 planning mandate
+User confirms Phase 1 means rigorous research, analysis, architecture contract design, hidden failure review and implementation-ready work packets before production coding. See [master](../../phase1/PHASE1_MASTER_PLAN.md), [system contracts](../../phase1/SYSTEM_CONTRACTS.md), [protocol plan](../../phase1/PROTOCOL_BEHAVIOR_SPEC.md), [Android plan](../../phase1/ANDROID_EXPERIENCE_SPEC.md), [failure atlas](../../phase1/FAILURE_AND_SECURITY_ATLAS.md), [decision gates](../../phase1/DECISION_GATES.md), [work breakdown](../../phase1/WORK_BREAKDOWN.md), [exit audit](../../phase1/EXIT_AUDIT.md).
+Current proof status: design documentation drafted; no Phase 1 spikes S01–S10 or Android device benchmark performed. No engine/API/schema freeze, no production authorization. Knowledge CI result for THIS change is separately checked before reporting success; network behavior is unverified.

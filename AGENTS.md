@@ -5,6 +5,9 @@ Read [NAVIGATION.md](NAVIGATION.md) and [IDEA_PLAN.md](IDEA_PLAN.md) first. This
 Product intent: IDEA_PLAN.md. Technical baseline: TECHNICAL_PLAN.md and Accepted ADRs. Reality: reproducible source/test evidence and CHECKPOINT.md. A contradictory claim must be investigated, not silently reconciled.
 Do NOT narrow this project into a diagram editor, fabricated animation, or single-protocol teaching demo. It is a real Android virtual networking laboratory with verifiable behavior.
 
+## Phase 1 planning lock (2026-10-23)
+[Phase 1 master plan](phase1/PHASE1_MASTER_PLAN.md) defines comprehensive planning down to implementable contracts; [Phase 1 exit audit](phase1/EXIT_AUDIT.md) currently blocks production engine and app feature coding. Do not mistake CI of Markdown tooling for architecture sign-off. Small throwaway proof-of-feasibility experiments are allowed to falsify high-risk hypotheses; log measurement, source/target hardware, negative cases, licensing and decision. Full production code requires Gate A acceptance and no unaddressed P0 questions. Model the long-term scope without prematurely implementing unvalidated breadth.
+
 ## Every task
 - Inspect branch/status and likely concurrent work. Avoid duplicating, overwriting or rebasing another worker's branch.
 - Load routed context via `python tools/knowledge.py route <task>`; follow direct graph dependencies and evidence.

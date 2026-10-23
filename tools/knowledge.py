@@ -16,6 +16,7 @@ REQUIRED = (
     "README.md", "AGENTS.md", "NAVIGATION.md", "IDEA_PLAN.md", "TECHNICAL_PLAN.md",
     "knowledge-system/icm/ICM.md", "knowledge-system/graphify/GRAPHIFY.md",
     "knowledge-system/vault/INDEX.md", "knowledge-system/vault/CHECKPOINT.md",
+    "phase1/PHASE1_MASTER_PLAN.md", "phase1/EXIT_AUDIT.md",
 )
 MD_LINK = re.compile(r"(?<!!)\[[^\]]+\]\(([^)]+)\)")
 BASE = ["AGENTS.md", "NAVIGATION.md", "IDEA_PLAN.md", "TECHNICAL_PLAN.md",
@@ -35,6 +36,10 @@ ROUTES = {
         ("architecture/ARCHITECTURE_REVIEW.md", "architecture/ARCHITECTURE_BLUEPRINT.md",
          "architecture/DECISION_LOG.md", "architecture/RISK_REGISTER.md",
          "architecture/SPIKES_AND_DECISION_GATES.md", "architecture/IMPLEMENTATION_ROADMAP.md")),
+    "phase1": (("phase1", "planning", "spec", "specification", "readiness", "signoff", "freeze", "before", "coding"),
+        ("phase1/PHASE1_MASTER_PLAN.md", "phase1/SYSTEM_CONTRACTS.md",
+         "phase1/PROTOCOL_BEHAVIOR_SPEC.md", "phase1/ANDROID_EXPERIENCE_SPEC.md",
+         "phase1/DECISION_GATES.md", "phase1/EXIT_AUDIT.md")),
     "handoff": (("handoff", "status", "continue", "checkpoint", "next"),
         ("knowledge-system/vault/CHECKPOINT.md", "knowledge-system/vault/WORKLOG.md", "knowledge-system/vault/OPEN_QUESTIONS.md")),
 }

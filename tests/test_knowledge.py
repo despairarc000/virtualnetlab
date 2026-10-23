@@ -26,6 +26,13 @@ class KnowledgeTests(unittest.TestCase):
         self.assertIn("architecture/ARCHITECTURE_REVIEW.md", paths)
         self.assertIn("architecture/RISK_REGISTER.md", paths)
 
+    def test_phase1_route(self):
+        hits, paths = mod.route("phase1 planning before coding")
+        self.assertTrue(any(name == "phase1" for name, _ in hits))
+        self.assertIn("phase1/PHASE1_MASTER_PLAN.md", paths)
+        self.assertIn("phase1/EXIT_AUDIT.md", paths)
+        self.assertEqual(len(paths), len(set(paths)))
+
     def test_protocol_route(self):
         _, paths = mod.route("fix dhcp wan switch")
         self.assertTrue(any("LAB_ACCEPTANCE" in p for p in paths))

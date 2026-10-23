@@ -5,6 +5,9 @@ Authoritative cold-start map. Open this file after [AGENTS.md](AGENTS.md). Docum
 |---|---|---|
 | Purpose, user goals, product constraints | [IDEA_PLAN.md](IDEA_PLAN.md) | [TECHNICAL_PLAN.md](TECHNICAL_PLAN.md) |
 | Current state, branch, handoff | [CHECKPOINT.md](knowledge-system/vault/CHECKPOINT.md) | [WORKLOG.md](knowledge-system/vault/WORKLOG.md) |
+| **Phase 1: planning and design** | [PHASE1_MASTER_PLAN.md](phase1/PHASE1_MASTER_PLAN.md) | [SYSTEM_CONTRACTS.md](phase1/SYSTEM_CONTRACTS.md), [EXIT_AUDIT.md](phase1/EXIT_AUDIT.md) |
+| **Phase 1: protocol and Android detail** | [PROTOCOL_BEHAVIOR_SPEC.md](phase1/PROTOCOL_BEHAVIOR_SPEC.md) | [ANDROID_EXPERIENCE_SPEC.md](phase1/ANDROID_EXPERIENCE_SPEC.md), [FAILURE_AND_SECURITY_ATLAS.md](phase1/FAILURE_AND_SECURITY_ATLAS.md) |
+| **Phase 1: decisions and work packets** | [DECISION_GATES.md](phase1/DECISION_GATES.md) | [WORK_BREAKDOWN.md](phase1/WORK_BREAKDOWN.md) |
 | Detailed architecture review | [ARCHITECTURE_REVIEW.md](architecture/ARCHITECTURE_REVIEW.md) | [ARCHITECTURE_BLUEPRINT.md](architecture/ARCHITECTURE_BLUEPRINT.md), [decisions](architecture/DECISION_LOG.md) |
 | Architecture alternatives / sources | [SOURCE_EVALUATION.md](architecture/SOURCE_EVALUATION.md) | [EVIDENCE.md](knowledge-system/vault/EVIDENCE.md) |
 | Risks / validation / implementation gates | [RISK_REGISTER.md](architecture/RISK_REGISTER.md) | [SPIKES_AND_DECISION_GATES.md](architecture/SPIKES_AND_DECISION_GATES.md), [IMPLEMENTATION_ROADMAP.md](architecture/IMPLEMENTATION_ROADMAP.md), [VALIDATION_STRATEGY.md](architecture/VALIDATION_STRATEGY.md) |
@@ -19,7 +22,7 @@ Authoritative cold-start map. Open this file after [AGENTS.md](AGENTS.md). Docum
 | Validation and workflow | [AGENTS.md](AGENTS.md) | `python tools/knowledge.py doctor` |
 
 ## Cold-start protocol
-1. Read AGENTS -> NAVIGATION -> CHECKPOINT and IDEA_PLAN.
+1. Read AGENTS -> NAVIGATION -> CHECKPOINT and IDEA_PLAN; if planning/design/architecture, read [Phase 1 master](phase1/PHASE1_MASTER_PLAN.md) and its exit audit.
 2. Detect current branch/head; inspect changed files and ongoing contributor work.
 3. Route task-specific context via ICM; for architecture or implementation decisions check [Gate A](architecture/SPIKES_AND_DECISION_GATES.md) and unresolved [risks](architecture/RISK_REGISTER.md); read only relevant vault records and direct graph neighbors.
 4. Identify known behavior vs proposed behavior, tests/evidence and conflicts. Document the smallest falsifiable implementation step.

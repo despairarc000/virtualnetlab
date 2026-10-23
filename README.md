@@ -4,6 +4,8 @@
 
 > Status: **planning / repository bootstrap** — no Android application or networking engine has been implemented yet.
 
+- [Phase 1 planning & design gate — ACTIVE](phase1/PHASE1_MASTER_PLAN.md)
+- [Phase 1 exit audit — NOT COMPLETE](phase1/EXIT_AUDIT.md)
 - [Project vision](IDEA_PLAN.md)
 - [Implementation roadmap](TECHNICAL_PLAN.md)
 - [Architecture review and outstanding decision gates](architecture/ARCHITECTURE_REVIEW.md)

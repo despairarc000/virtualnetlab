@@ -1,6 +1,6 @@
 # Technical implementation plan — VirtualNetLab
 Status: **REVIEWED PROPOSED v0.2 / implementation NOT STARTED** | 2026-10-23.
-This page is the stable plan entrypoint. [Product intent](IDEA_PLAN.md) overrides convenience changes. Decisions with no prototype validation remain provisional; see [review](architecture/ARCHITECTURE_REVIEW.md).
+Engineering program map: [Phase 1 is comprehensive planning + Gate A proof and sign-off](phase1/PHASE1_MASTER_PLAN.md); Phase 2 begins production implementation at G1. [Planning exit audit](phase1/EXIT_AUDIT.md) is currently NOT READY. This page is the stable technical plan entrypoint. [Product intent](IDEA_PLAN.md) overrides convenience changes. Decisions with no prototype validation remain provisional; see [review](architecture/ARCHITECTURE_REVIEW.md).
 
 ## Chosen implementation direction (conditional on Gate A)
 - Headless **deterministic discrete-event** network simulator with typed actor state, integer virtual time, one serialized engine writer and explicit causal event trace.
@@ -49,3 +49,13 @@ PC -> switch -> home-router LAN: DHCP and ICMP work. Move switch uplink to route
 
 ## Quality and implementation authority
 Read [AGENTS.md](AGENTS.md). No announced protocol support without standards-backed tests, no claim of Android success without APK/device test. Decision acceptance is a planning baseline; actual performance, fidelity, ABI, minimum Android SDK and persistence archive need experiments. Next actionable work is **G0 spikes**, not a full premature engine rewrite.
+
+## Phase 1 detailed contracts (review before producing code)
+- [System identities and invariants](phase1/SYSTEM_CONTRACTS.md)
+- [Near-term per-protocol behavior and model fidelity](phase1/PROTOCOL_BEHAVIOR_SPEC.md)
+- [Android UX/storage/lifecycle](phase1/ANDROID_EXPERIENCE_SPEC.md)
+- [Failure, security and recovery atlas](phase1/FAILURE_AND_SECURITY_ATLAS.md)
+- [Open decision matrix](phase1/DECISION_GATES.md)
+- [Implementation work breakdown](phase1/WORK_BREAKDOWN.md)
+- [Glossary and scope vocabulary](phase1/GLOSSARY_AND_DECISION_RULES.md)
+- [Planning sign-off checklist](phase1/EXIT_AUDIT.md)

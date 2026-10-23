@@ -38,3 +38,6 @@ A person can create a PC—switch—router lab, observe DHCP DORA, deliberately 
 
 ## Relationship to plans
 This document owns product intent. [TECHNICAL_PLAN.md](TECHNICAL_PLAN.md) specifies an evolving strategy. [NAVIGATION.md](NAVIGATION.md) routes all agents and contributors. Technical substitutions may not quietly narrow the mission.
+
+## Engineering sequencing rule (2026-10-23)
+The user defined [Phase 1](phase1/PHASE1_MASTER_PLAN.md) as exhaustive *planning and architecture risk reduction* before production implementation, so feature coding does not run into avoidable architecture walls. This does not narrow the ultimate laboratory scope. A few disposable, instrumented proof-of-feasibility experiments are allowed to resolve things research cannot prove; they are not counted as production progress. No engine/API freeze before the [Phase 1 exit gate](phase1/EXIT_AUDIT.md).

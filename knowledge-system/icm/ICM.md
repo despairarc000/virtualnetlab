@@ -18,3 +18,7 @@ When a file moves, update ICM route map and Markdown links, run doctor. When sou
 ## Architecture review route
 - **architecture / design / tradeoffs / risk / scalability / decision / validation** -> [review](../../architecture/ARCHITECTURE_REVIEW.md), [blueprint](../../architecture/ARCHITECTURE_BLUEPRINT.md), [decision log](../../architecture/DECISION_LOG.md), [risks](../../architecture/RISK_REGISTER.md), [spikes](../../architecture/SPIKES_AND_DECISION_GATES.md), [roadmap](../../architecture/IMPLEMENTATION_ROADMAP.md).
 This route must appear in tools/knowledge.py and its tests.
+
+## Phase 1 required context (user sequencing rule)
+- **phase1 / planning / spec / specification / readiness / signoff / freeze / before coding / risk-reduction** -> [master](../../phase1/PHASE1_MASTER_PLAN.md), [system](../../phase1/SYSTEM_CONTRACTS.md), [protocol](../../phase1/PROTOCOL_BEHAVIOR_SPEC.md), [Android](../../phase1/ANDROID_EXPERIENCE_SPEC.md), [decisions](../../phase1/DECISION_GATES.md), [exit audit](../../phase1/EXIT_AUDIT.md).
+- Before any implementation recommendation, verify Phase 1 [EXIT_AUDIT](../../phase1/EXIT_AUDIT.md). Code Mode agents must not treat DRAFT plans as accepted API specifications.

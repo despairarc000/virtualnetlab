@@ -12,3 +12,9 @@
 - Decision: maintain DES/Kotlin/Compose as an accepted baseline, but defer packet representation/API/persistent storage format and minimum SDK until instrumented spikes.
 - Add design/runtime/presentation state separation; physical port/bridge-domain/L3 interface separation; explicit target-device probe identity; causal trace and truthful fidelity.
 - Add G0 architecture gate, risk register, traceability and test strategy. Status: paper review only; no code or measured device result.
+
+## 2026-10-23 — Phase 1 planning-only commitment
+- User defined first program phase as *thorough end-to-end planning to implementation-ready detail* so irreversible coding begins only with validated architecture. Reversible throwaway experiments are allowed to settle unknowns.
+- Added Phase 1 master plan, typed domain and scheduling contracts, protocol semantics, Android/UX/storage/lifecycle design, failure/security atlas, research/reuse decision gates, detailed handoff packets, glossary and live exit audit.
+- Connected these through ICM, vault and navigation and extended test checks for route coverage.
+- Not yet performed: independent peer review, actual source-level Filius audit, 4GB Android benchmark, packet buffer/scheduler spikes, protocol source-level conformance execution or Gate A sign-off. The exit audit explicitly remains NOT READY.

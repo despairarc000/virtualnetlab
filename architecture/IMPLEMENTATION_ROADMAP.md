@@ -1,6 +1,9 @@
 # Implementation roadmap, dependencies and exit gates
 Status: PROPOSED v0.2 | 2026-10-23. Goal: improve implementation order without shrinking the user vision. Stages are **evidence gates**, not calendar promises.
 
+## Phase mapping (mandatory)
+**Phase 1** = full research, detailed requirements, system/protocol/platform contracts, adversarial review, Gate A spikes and sign-off. It includes previous bootstrap and G0; production feature coding is blocked until [Phase 1 EXIT_AUDIT](../phase1/EXIT_AUDIT.md) is accepted. **Phase 2** = production implementation G1–G7. Prototype experiments during Phase 1 are disposable evidence-gathering work only. Read [Phase 1 master](../phase1/PHASE1_MASTER_PLAN.md) before delegating production work.
+
 ## Development tracks
 A **engine/protocol correctness**; B **Android UX and persistence**; C **verification/oracles/performance**; D **educational activities/diagnostics**. Tracks run in parallel where interfaces are agreed. A thin Android feasibility prototype should happen EARLY to prevent spending months on an engine that cannot be used comfortably on phones. But the UI can never fake protocol outcomes.
 

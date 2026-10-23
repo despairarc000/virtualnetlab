@@ -56,3 +56,12 @@ Review-specific inferences and unknowns are labeled in [architecture audit](../.
 | S25 | Mininet uses Linux namespaces and virtual Ethernet links | https://mininet.org/overview/ | Linux-centric emulation, not a built-in Android engine |
 | S26 | EVE-NG requires hypervisor capabilities | https://www.eve-ng.net/index.php/supported-hardware-and-software-systems/ | Exact resource requirements vary by lab |
 | S27 | Boson NetSim supports interactive educational assessment | https://netsim.boson.com/ | Proprietary/cloud service |
+
+## Phase 1 source-level notes (2026-10-23)
+- RFC 2131 §3.6 and §4.4 explicitly describe independent client processing per interface, INIT→SELECTING→REQUESTING→BOUND and RENEWING/REBINDING/expiry behavior: https://www.rfc-editor.org/rfc/rfc2131.html . DORA alone is not complete DHCP.
+- RFC 3927 §§2.1–2.5 include IPv4LL selection, ARP probing, announcements and conflict handling, not merely assigning arbitrary 169.254: https://www.rfc-editor.org/rfc/rfc3927.html .
+- ns-3 scheduler documentation distinguishes discrete simulation time from wall time, scheduled events, cancel/remove and equal-time ordering: https://www.nsnam.org/docs/manual/html/events.html .
+- Android Saved State guidance says large/complex application data requires local persistence, not SavedStateHandle: https://developer.android.com/topic/libraries/architecture/saving-states .
+- Android foreground/background task guidance cautions restrictions and battery/power overhead: https://developer.android.com/develop/background-work/background-tasks .
+- Filius upstream repository is an educational Java simulator under GPLv2 or GPLv3; reuse needs version-pinned source/legal analysis: https://gitlab.com/filius1/filius .
+These documents are **planning references** and not test evidence that VirtualNetLab implements them.
