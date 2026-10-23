@@ -48,6 +48,9 @@ Keep independent observations separate from official docs and hypotheses. Record
 
 Review-specific inferences and unknowns are labeled in [architecture audit](../../architecture/ARCHITECTURE_REVIEW.md).
 
+## Additional comparable-system evidence
+| ID | Observed source statement | Primary URL | Limits |
+|---|---|---|---|
 | S23 | Filius is a Java educational network simulator; its README advertises GPLv2 or GPLv3 and Windows/Linux support | https://gitlab.com/filius1/filius | Needs current tagged license/source and architecture review |
 | S24 | Cisco Modeling Labs runs licensed virtual network OS images and cautions against using images outside CML | https://developer.cisco.com/docs/modeling-labs/vm-images-for-cml-labs/ | No inclusion of proprietary images in our project |
 | S25 | Mininet uses Linux namespaces and virtual Ethernet links | https://mininet.org/overview/ | Linux-centric emulation, not a built-in Android engine |
