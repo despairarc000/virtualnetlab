@@ -27,3 +27,5 @@ Record experiments, commit refs and tests when resolving. Move accepted outcomes
 - S08: explicit protocol implementation/fidelity level and independent oracle.
 - S09: external backend extension boundary / privacy and permission architecture.
 See [source review](../../architecture/SOURCE_EVALUATION.md), [risks](../../architecture/RISK_REGISTER.md) and [decision log](../../architecture/DECISION_LOG.md).
+
+- S10: Evaluate Filius tagged code, Swing/core boundaries, execution concurrency and GPLv2/v3 redistribution constraints before a from-scratch engine is declared unequivocally best.

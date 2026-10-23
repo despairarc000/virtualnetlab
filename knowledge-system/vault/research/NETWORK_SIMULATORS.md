@@ -45,3 +45,12 @@ Protocol standards/RFCs, reference packet captures and constrained-device benchm
 - GNS3 divides topology client from controller/compute/emulator nodes; this supports future optional remote backend separation, not a decision to use one now: https://docs.gns3.com/docs/using-gns3/design/architecture
 - CORE's Linux namespace networking depends on host facilities: https://github.com/coreemu/core/blob/master/docs/architecture.md
 - Review is now indexed through [source evaluation](../../../architecture/SOURCE_EVALUATION.md) and [architecture audit](../../../architecture/ARCHITECTURE_REVIEW.md). Comparisons are qualitative, not measured Android performance.
+
+## Additional comparables discovered 2026-10-23
+- **Filius** — Java educational simulation, design and simulation views, independent DHCP/router features; its README says GPLv2-or-v3. Need S10 to inspect engine/GUI coupling and Android feasibility rather than reflexively reinvent it: https://gitlab.com/filius1/filius
+- **Cisco Modeling Labs** — licensed NOS images running in VMs; not legitimately transplantable into our app: https://developer.cisco.com/docs/modeling-labs/vm-images-for-cml-labs/
+- **EVE-NG** — server/hypervisor-oriented emulation: https://www.eve-ng.net/index.php/supported-hardware-and-software-systems/
+- **Mininet** — Linux namespaced network emulator, good interoperability oracle: https://mininet.org/overview/
+- **Boson NetSim** — certification labs and guided assessments, useful instructional benchmark, web oriented: https://netsim.boson.com/
+
+Research conclusion updated: **build-vs-adapt must consider Filius at Gate A**, even though Kotlin/DES remains our conditional baseline. Do not copy GPL code until licensing and architecture are reviewed.

@@ -47,3 +47,9 @@ Keep independent observations separate from official docs and hypotheses. Record
 | S22 | Android recommends accessibility support, including larger touch targets | https://developer.android.com/guide/topics/ui/accessibility/apps | Real device testing remains needed |
 
 Review-specific inferences and unknowns are labeled in [architecture audit](../../architecture/ARCHITECTURE_REVIEW.md).
+
+| S23 | Filius is a Java educational network simulator; its README advertises GPLv2 or GPLv3 and Windows/Linux support | https://gitlab.com/filius1/filius | Needs current tagged license/source and architecture review |
+| S24 | Cisco Modeling Labs runs licensed virtual network OS images and cautions against using images outside CML | https://developer.cisco.com/docs/modeling-labs/vm-images-for-cml-labs/ | No inclusion of proprietary images in our project |
+| S25 | Mininet uses Linux namespaces and virtual Ethernet links | https://mininet.org/overview/ | Linux-centric emulation, not a built-in Android engine |
+| S26 | EVE-NG requires hypervisor capabilities | https://www.eve-ng.net/index.php/supported-hardware-and-software-systems/ | Exact resource requirements vary by lab |
+| S27 | Boson NetSim supports interactive educational assessment | https://netsim.boson.com/ | Proprietary/cloud service |

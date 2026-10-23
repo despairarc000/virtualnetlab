@@ -30,6 +30,7 @@ Status: ACTIVE proposed controls; P0 blocks stable API or big implementation. Li
 | R25 | P2 | Research becomes stale, agent updates unsupported claims | Evidence IDs/status/date, automated link audits, ADR review |
 | R26 | P2 | GitHub Actions success conflated with real APK delivery | Separate CI jobs/gates, checksum/artifact inspection, real device test |
 | R27 | P2 | Resource constraints incentivize unrealistic instant physics | Distinguish default conceptual latency from configurable measured model |
+| R29 | P1 | Reimplementing an entire educational stack without first evaluating a legally reusable existing simulator | S10: inspect Filius code boundaries, actual port/testing cost, license and future maintenance |
 | R28 | P2 | Unknown/future link type creates impossible packet semantics | Typed link capabilities and validators with explicit unsupported response |
 
 Owners assigned at first work-item planning; severity re-evaluated after each spike. See [experiments](SPIKES_AND_DECISION_GATES.md) and [acceptance](VALIDATION_STRATEGY.md).

@@ -14,12 +14,14 @@ For each experiment: hypothesis, alternatives, test inputs, measurements, negati
 | S06 | Android lifecycle execution policy? | Background/resume/rotate/low-memory process death; compare resumed run hash | Explicit pause+recovery, no reliance on unrestricted background execution |
 | S07 | How to prove packet-to-device identity? | Same LAN IP on two routers, self-ping, WAN link attach/detach and selected-target trace | Remote success requires remote observed event/identity, not only reply from duplicated address |
 | S08 | Protocol fidelity level in first public release? | RFC-driven DHCP/IPv4LL test matrix with Packet Tracer discrepancy recorded | Declare exactly supported states, deviations, unimplemented edge cases |
+| S10 | Could we reuse/adapt Filius instead of building engine from scratch? | Read current tagged Filius source, map scheduler/threading/CLI/device/package/UI dependencies, license obligations, prototype an Android-agnostic protocol unit only if authorized | Select reuse vs fresh Kotlin only after demonstrated deterministic behavior, maintenance, Android compatibility and explicit distribution-license policy |
 | S09 | Native-only vs optional external backend boundary? | Mock backend describes capabilities/snapshots/commands; compare offline API | Do not implement network connector until proven requirements + security review |
 
 ### Gate A: architecture accepted for production
 - Primary schema IDs, port/bridge hierarchy, timing units and command/trace contracts reviewed.
 - S01, S02, S03, S04 proof linked or reversible interim assumption explicitly signed off.
 - License inventory of code dependencies and vendor assets prepared; no accidental Copyleft integration.
+- S10 comparison of Filius (GPLv2/v3, architecture viability) against fresh engine completed or explicitly scoped out with documented reason.
 - Failure model, data import/security and per-protocol scope reviewed.
 - Labs A/B/C from acceptance rewritten into structured fixtures before code is called production-ready.
 

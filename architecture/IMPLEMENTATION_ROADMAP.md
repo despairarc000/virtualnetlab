@@ -5,7 +5,7 @@ Status: PROPOSED v0.2 | 2026-10-23. Goal: improve implementation order without s
 A **engine/protocol correctness**; B **Android UX and persistence**; C **verification/oracles/performance**; D **educational activities/diagnostics**. Tracks run in parallel where interfaces are agreed. A thin Android feasibility prototype should happen EARLY to prevent spending months on an engine that cannot be used comfortably on phones. But the UI can never fake protocol outcomes.
 
 ### G0 — Architecture contract & falsification spikes (BLOCKING BEFORE ENGINE API FREEZE)
-Deliver: review checklist, source/license register, module boundary spike, packet representation prototype, scheduler proof, Android pan/zoom + trace paging spike, persistence version fixture.
+Deliver: review checklist, source/license register, module boundary spike, packet representation prototype, scheduler proof, source-level Filius reuse audit (S10), Android pan/zoom + trace paging spike, persistence version fixture.
 Gate: all P0 questions resolved with tests/measurements or explicitly bounded reversible assumption, baseline ADRs updated, proof on JVM + Android device/emulator; **no long-lived file/plugin API freeze**.
 ### G1 — Deterministic event/kernel foundation
 Deliver: headless JVM project, typed IDs, topology validator, versioned schema draft, event queue with integer ticks + stable sequence, seed RNG, serialized action ingestion, bounded run, trace causal IDs, snapshot/replay tests.

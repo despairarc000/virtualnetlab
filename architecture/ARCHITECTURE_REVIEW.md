@@ -15,6 +15,7 @@ What architecture lets an offline Android user *really build, configure, run, in
 | Animated topology/pseudo packets | Poor | High | None | Misleading teaching | REJECT |
 | Independent deterministic discrete-event simulation | High if validated | High in principle | Per-implemented model, bounded | Implementation and validation burden | BASELINE |
 | Embed ns-3 native libraries | Potentially high | Requires porting and UX bridge | Research-model dependent | JNI, memory, GPLv2 duties, complex integration | STUDY FOR ORACLE/OPTION |
+| Adapt Filius Java educational simulator | Possible educational workflow match | Java source but GPLv2-or-v3 licensing, Swing/runtime coupling, unverified scheduling model | MUST inspect source and license before reuse | OPEN S10 |
 | Embed OMNeT++/INET | Potentially high | Requires porting and licensing | Research-model dependent | Academic Public License, commercial restrictions, integration | DO NOT EMBED DEFAULT |
 | Local GNS3/QEMU/CORE/Linux namespace emulation | Strong for real images | Not dependable on unprivileged budget Android | Higher when licensed images available | Privileges, images, resources, power | REJECT LOCAL BASELINE |
 | Remote GNS3/containerlab emulation | Strong but not offline | Requires server/network | Higher | Complexity and security/trust | OPTIONAL FUTURE |
@@ -79,3 +80,10 @@ Binary vs typed packet implementation; storage and snapshot format; Compose Canv
 
 ## Review verdict
 **GO for time-boxed architectural spikes and formal contracts. NOT GO for broad protocol implementation or permanent file format/API until Gate A is passed.** The mission remains comprehensive but delivery is an expanding set of accurately modeled capabilities. Formal results belong in ADR updates and validated tests, not conclusions inferred from this document.
+
+## Additional competitor/implementation candidate review (2026-10-23)
+- **Filius** is a Java-based educational virtual network simulator. Its project README describes GPLv2-or-GPLv3 and Windows/Linux usage. It may be a strong reference for device/educational models and could be a possible basis for a compatible open-source derivative, but code quality, engine/render coupling, scheduling determinism, Android portability, and license compatibility must be audited, not assumed. https://gitlab.com/filius1/filius
+- **Cisco Modeling Labs (CML)** and **EVE-NG** reinforce a distinction between a packaged simulation and VM-based network-OS emulation; Cisco warns its CML VM images are licensed for CML usage only. https://www.cisco.com/site/us/en/learn/training-certifications/training/modeling-labs/index.html ; https://developer.cisco.com/docs/modeling-labs/vm-images-for-cml-labs/ ; https://www.eve-ng.net/index.php/supported-hardware-and-software-systems/
+- **Mininet** emulates networks using Linux namespaces and veth pairs and is a strong repeatable-lab oracle concept, but not a direct native offline Android baseline. https://mininet.org/overview/
+- **Boson NetSim** demonstrates commercial teaching, guided labs and assessment experiences; cloud/browser accounts are not acceptable as a dependency for our offline core. https://netsim.boson.com/
+The decision is still simulation-first; S10 checks whether adapting Filius or adopting separable, legally reusable components is genuinely better than entirely fresh implementation. This is a documented open alternative, not a commitment.
