@@ -1,0 +1,2 @@
+# Future engine-scope constraints
+Inherited from [root AGENTS](../AGENTS.md). Headless protocol state machines are authoritative. Network actors communicate only through scheduler events/interfaces. Expose immutable trace with packet and reason IDs. Deterministic seed+snapshot+command sequence must replay identically. Never use Android rendering classes or wall-clock time inside engine protocol logic. Engine source is NOT created yet; this directory currently exists only to predefine scope.

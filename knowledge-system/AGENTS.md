@@ -1,0 +1,2 @@
+# Scoped knowledge-system rules
+Follow root [AGENTS.md](../AGENTS.md). This subtree owns ICM routes, Graphify graph tooling, curated research, decisions, evidence and checkpoints. Keep research sources and trust level explicit; don't turn guesses into implementation claims. Add status and date to decisions. Never overwrite historical evidence in place to hide a contradiction. Every new vault page must be reachable by Markdown links from INDEX.md or another indexed page. Run `python tools/knowledge.py doctor` and `python tools/knowledge.py graph`.

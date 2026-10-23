@@ -1,0 +1,2 @@
+# Future Android app-scope constraints
+Inherited from [root AGENTS](../AGENTS.md). UI is a projection/controller for canonical network model, not simulation logic. A packet animation must cite a real engine event. Support touch/landscape/offline, do not conceal unsupported operations or force auto-selected WAN/LAN port. Instrumented Android acceptance required before APK claims. App source is NOT created yet.

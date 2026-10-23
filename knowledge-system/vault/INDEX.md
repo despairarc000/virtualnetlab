@@ -1,0 +1,14 @@
+# Vault index
+A curated, provenance-aware Markdown knowledge base. Use [navigation](../../NAVIGATION.md) or [ICM routes](../icm/ICM.md) to load the smallest relevant context.
+
+- [CHECKPOINT.md](CHECKPOINT.md) — last verified state, next actions, unverified components.
+- [EVIDENCE.md](EVIDENCE.md) — source catalog and assertion provenance.
+- [OPEN_QUESTIONS.md](OPEN_QUESTIONS.md) — unresolved decisions and experiment proposals.
+- [WORKLOG.md](WORKLOG.md) — handoff and chronological progress.
+- [NETWORK_SIMULATORS.md](research/NETWORK_SIMULATORS.md) — researched comparable systems and tradeoffs.
+- [ADR-0001-ENGINE.md](decisions/ADR-0001-ENGINE.md) — why a deterministic simulator first.
+- [ADR-0002-ANDROID.md](decisions/ADR-0002-ANDROID.md) — native Android and shared core boundary.
+- [PROTOCOL_MATRIX.md](specs/PROTOCOL_MATRIX.md) — planned fidelity and honest support statuses.
+- [LAB_ACCEPTANCE.md](specs/LAB_ACCEPTANCE.md) — acceptance scenarios and adversarial behavior.
+
+Entry standards: heading, date, status, claim/fact vs inference, evidence links, dependencies, result/next check. Historical notes are preserved and annotated rather than silently rewritten.
